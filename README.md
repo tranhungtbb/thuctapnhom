@@ -1,2 +1,0 @@
-# ahihi
-k co gì
