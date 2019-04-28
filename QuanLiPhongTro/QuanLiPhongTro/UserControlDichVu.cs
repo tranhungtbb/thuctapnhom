@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLiPhongTro
 {
-    public partial class UserControlThueMoi : UserControl
+    public partial class UserControlDichVu : UserControl
     {
-        public UserControlThueMoi()
+        public UserControlDichVu()
         {
             InitializeComponent();
         }
-
-        
     }
 }

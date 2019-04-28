@@ -46,11 +46,11 @@
             this.Comb_MaPhong = new System.Windows.Forms.ComboBox();
             this.Ngaysinh = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_XoaKH = new System.Windows.Forms.Button();
-            this.btn_SuaKH = new System.Windows.Forms.Button();
-            this.btn_ThemKH = new System.Windows.Forms.Button();
+            this.btn_Xoakhachhang = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.btn_Capnhapkhachhang = new System.Windows.Forms.Button();
             this.txt_IDKhachhang = new System.Windows.Forms.TextBox();
+            this.btn_Themkhachhang = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.Comb_IDphong_TB = new System.Windows.Forms.ComboBox();
@@ -59,12 +59,11 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.btn_Timkiem = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_ThemHĐ = new System.Windows.Forms.Button();
-            this.btn_SuaHĐ = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -80,12 +79,13 @@
             this.Comb_IDMaPhong_HD = new System.Windows.Forms.ComboBox();
             this.Comb_IDkhachhang_HD = new System.Windows.Forms.ComboBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.btn_XoaHĐ = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.btn_Loc = new System.Windows.Forms.Button();
             this.btn_XemTB = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.label22 = new System.Windows.Forms.Label();
+            this.btn_Xoahopdong = new System.Windows.Forms.Button();
+            this.btn_Capnhaphopdong = new System.Windows.Forms.Button();
+            this.btn_ThemHopdong = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -240,11 +240,11 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btn_XoaKH);
-            this.panel1.Controls.Add(this.btn_SuaKH);
-            this.panel1.Controls.Add(this.btn_ThemKH);
+            this.panel1.Controls.Add(this.btn_Xoakhachhang);
             this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.btn_Capnhapkhachhang);
             this.panel1.Controls.Add(this.txt_IDKhachhang);
+            this.panel1.Controls.Add(this.btn_Themkhachhang);
             this.panel1.Controls.Add(this.Ngaysinh);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Comb_MaPhong);
@@ -263,35 +263,21 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(275, 297);
+            this.panel1.Size = new System.Drawing.Size(275, 315);
             this.panel1.TabIndex = 16;
             // 
-            // btn_XoaKH
+            // btn_Xoakhachhang
             // 
-            this.btn_XoaKH.Location = new System.Drawing.Point(212, 273);
-            this.btn_XoaKH.Name = "btn_XoaKH";
-            this.btn_XoaKH.Size = new System.Drawing.Size(58, 20);
-            this.btn_XoaKH.TabIndex = 20;
-            this.btn_XoaKH.Text = "Xóa";
-            this.btn_XoaKH.UseVisualStyleBackColor = true;
-            // 
-            // btn_SuaKH
-            // 
-            this.btn_SuaKH.Location = new System.Drawing.Point(154, 273);
-            this.btn_SuaKH.Name = "btn_SuaKH";
-            this.btn_SuaKH.Size = new System.Drawing.Size(58, 20);
-            this.btn_SuaKH.TabIndex = 19;
-            this.btn_SuaKH.Text = "Sửa";
-            this.btn_SuaKH.UseVisualStyleBackColor = true;
-            // 
-            // btn_ThemKH
-            // 
-            this.btn_ThemKH.Location = new System.Drawing.Point(96, 273);
-            this.btn_ThemKH.Name = "btn_ThemKH";
-            this.btn_ThemKH.Size = new System.Drawing.Size(58, 20);
-            this.btn_ThemKH.TabIndex = 18;
-            this.btn_ThemKH.Text = "Thêm";
-            this.btn_ThemKH.UseVisualStyleBackColor = true;
+            this.btn_Xoakhachhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_Xoakhachhang.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Xoakhachhang.BackgroundImage")));
+            this.btn_Xoakhachhang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Xoakhachhang.FlatAppearance.BorderSize = 0;
+            this.btn_Xoakhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Xoakhachhang.Location = new System.Drawing.Point(217, 273);
+            this.btn_Xoakhachhang.Name = "btn_Xoakhachhang";
+            this.btn_Xoakhachhang.Size = new System.Drawing.Size(51, 39);
+            this.btn_Xoakhachhang.TabIndex = 77;
+            this.btn_Xoakhachhang.UseVisualStyleBackColor = false;
             // 
             // label10
             // 
@@ -303,12 +289,38 @@
             this.label10.TabIndex = 16;
             this.label10.Text = "ID khách hàng";
             // 
+            // btn_Capnhapkhachhang
+            // 
+            this.btn_Capnhapkhachhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_Capnhapkhachhang.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Capnhapkhachhang.BackgroundImage")));
+            this.btn_Capnhapkhachhang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Capnhapkhachhang.FlatAppearance.BorderSize = 0;
+            this.btn_Capnhapkhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Capnhapkhachhang.Location = new System.Drawing.Point(160, 273);
+            this.btn_Capnhapkhachhang.Name = "btn_Capnhapkhachhang";
+            this.btn_Capnhapkhachhang.Size = new System.Drawing.Size(51, 39);
+            this.btn_Capnhapkhachhang.TabIndex = 76;
+            this.btn_Capnhapkhachhang.UseVisualStyleBackColor = false;
+            // 
             // txt_IDKhachhang
             // 
             this.txt_IDKhachhang.Location = new System.Drawing.Point(124, 5);
             this.txt_IDKhachhang.Name = "txt_IDKhachhang";
             this.txt_IDKhachhang.Size = new System.Drawing.Size(145, 20);
             this.txt_IDKhachhang.TabIndex = 17;
+            // 
+            // btn_Themkhachhang
+            // 
+            this.btn_Themkhachhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_Themkhachhang.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Themkhachhang.BackgroundImage")));
+            this.btn_Themkhachhang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Themkhachhang.FlatAppearance.BorderSize = 0;
+            this.btn_Themkhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Themkhachhang.Location = new System.Drawing.Point(103, 273);
+            this.btn_Themkhachhang.Name = "btn_Themkhachhang";
+            this.btn_Themkhachhang.Size = new System.Drawing.Size(51, 39);
+            this.btn_Themkhachhang.TabIndex = 75;
+            this.btn_Themkhachhang.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -323,7 +335,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(3, 315);
+            this.label9.Location = new System.Drawing.Point(3, 322);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(237, 19);
             this.label9.TabIndex = 18;
@@ -332,7 +344,7 @@
             // Comb_IDphong_TB
             // 
             this.Comb_IDphong_TB.FormattingEnabled = true;
-            this.Comb_IDphong_TB.Location = new System.Drawing.Point(7, 337);
+            this.Comb_IDphong_TB.Location = new System.Drawing.Point(7, 344);
             this.Comb_IDphong_TB.Name = "Comb_IDphong_TB";
             this.Comb_IDphong_TB.Size = new System.Drawing.Size(70, 21);
             this.Comb_IDphong_TB.TabIndex = 20;
@@ -388,6 +400,16 @@
             this.panel3.Size = new System.Drawing.Size(989, 21);
             this.panel3.TabIndex = 26;
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(791, 3);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(178, 13);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "@2019 Quản lí phòng trọ, HVKTQS";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -424,29 +446,11 @@
             this.panel5.Size = new System.Drawing.Size(10, 502);
             this.panel5.TabIndex = 30;
             // 
-            // btn_ThemHĐ
-            // 
-            this.btn_ThemHĐ.Location = new System.Drawing.Point(297, 476);
-            this.btn_ThemHĐ.Name = "btn_ThemHĐ";
-            this.btn_ThemHĐ.Size = new System.Drawing.Size(67, 23);
-            this.btn_ThemHĐ.TabIndex = 31;
-            this.btn_ThemHĐ.Text = "Thêm";
-            this.btn_ThemHĐ.UseVisualStyleBackColor = true;
-            // 
-            // btn_SuaHĐ
-            // 
-            this.btn_SuaHĐ.Location = new System.Drawing.Point(370, 476);
-            this.btn_SuaHĐ.Name = "btn_SuaHĐ";
-            this.btn_SuaHĐ.Size = new System.Drawing.Size(67, 23);
-            this.btn_SuaHĐ.TabIndex = 32;
-            this.btn_SuaHĐ.Text = "Sửa";
-            this.btn_SuaHĐ.UseVisualStyleBackColor = true;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(297, 283);
+            this.label14.Location = new System.Drawing.Point(297, 272);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(94, 17);
             this.label14.TabIndex = 33;
@@ -456,7 +460,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(297, 312);
+            this.label15.Location = new System.Drawing.Point(297, 301);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(92, 17);
             this.label15.TabIndex = 34;
@@ -466,7 +470,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(297, 337);
+            this.label16.Location = new System.Drawing.Point(297, 326);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(102, 17);
             this.label16.TabIndex = 35;
@@ -476,7 +480,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label17.Location = new System.Drawing.Point(297, 361);
+            this.label17.Location = new System.Drawing.Point(297, 350);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(64, 17);
             this.label17.TabIndex = 36;
@@ -484,7 +488,7 @@
             // 
             // Ngaybatdau
             // 
-            this.Ngaybatdau.Location = new System.Drawing.Point(407, 308);
+            this.Ngaybatdau.Location = new System.Drawing.Point(407, 297);
             this.Ngaybatdau.Name = "Ngaybatdau";
             this.Ngaybatdau.Size = new System.Drawing.Size(100, 20);
             this.Ngaybatdau.TabIndex = 37;
@@ -493,7 +497,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(297, 388);
+            this.label18.Location = new System.Drawing.Point(297, 377);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(58, 17);
             this.label18.TabIndex = 38;
@@ -503,7 +507,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(297, 414);
+            this.label19.Location = new System.Drawing.Point(297, 403);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(74, 17);
             this.label19.TabIndex = 39;
@@ -513,7 +517,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label20.Location = new System.Drawing.Point(297, 442);
+            this.label20.Location = new System.Drawing.Point(297, 431);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(103, 17);
             this.label20.TabIndex = 40;
@@ -521,28 +525,28 @@
             // 
             // txt_Mahopdong
             // 
-            this.txt_Mahopdong.Location = new System.Drawing.Point(407, 283);
+            this.txt_Mahopdong.Location = new System.Drawing.Point(407, 272);
             this.txt_Mahopdong.Name = "txt_Mahopdong";
             this.txt_Mahopdong.Size = new System.Drawing.Size(100, 20);
             this.txt_Mahopdong.TabIndex = 41;
             // 
             // txt_Thoigianthue
             // 
-            this.txt_Thoigianthue.Location = new System.Drawing.Point(407, 335);
+            this.txt_Thoigianthue.Location = new System.Drawing.Point(407, 324);
             this.txt_Thoigianthue.Name = "txt_Thoigianthue";
             this.txt_Thoigianthue.Size = new System.Drawing.Size(100, 20);
             this.txt_Thoigianthue.TabIndex = 42;
             // 
             // txt_Tiencoc
             // 
-            this.txt_Tiencoc.Location = new System.Drawing.Point(407, 362);
+            this.txt_Tiencoc.Location = new System.Drawing.Point(407, 351);
             this.txt_Tiencoc.Name = "txt_Tiencoc";
             this.txt_Tiencoc.Size = new System.Drawing.Size(100, 20);
             this.txt_Tiencoc.TabIndex = 43;
             // 
             // txt_Ghichu
             // 
-            this.txt_Ghichu.Location = new System.Drawing.Point(407, 385);
+            this.txt_Ghichu.Location = new System.Drawing.Point(407, 374);
             this.txt_Ghichu.Name = "txt_Ghichu";
             this.txt_Ghichu.Size = new System.Drawing.Size(100, 20);
             this.txt_Ghichu.TabIndex = 44;
@@ -550,7 +554,7 @@
             // Comb_IDMaPhong_HD
             // 
             this.Comb_IDMaPhong_HD.FormattingEnabled = true;
-            this.Comb_IDMaPhong_HD.Location = new System.Drawing.Point(407, 411);
+            this.Comb_IDMaPhong_HD.Location = new System.Drawing.Point(407, 400);
             this.Comb_IDMaPhong_HD.Name = "Comb_IDMaPhong_HD";
             this.Comb_IDMaPhong_HD.Size = new System.Drawing.Size(100, 21);
             this.Comb_IDMaPhong_HD.TabIndex = 45;
@@ -558,7 +562,7 @@
             // Comb_IDkhachhang_HD
             // 
             this.Comb_IDkhachhang_HD.FormattingEnabled = true;
-            this.Comb_IDkhachhang_HD.Location = new System.Drawing.Point(407, 438);
+            this.Comb_IDkhachhang_HD.Location = new System.Drawing.Point(407, 427);
             this.Comb_IDkhachhang_HD.Name = "Comb_IDkhachhang_HD";
             this.Comb_IDkhachhang_HD.Size = new System.Drawing.Size(100, 21);
             this.Comb_IDkhachhang_HD.TabIndex = 46;
@@ -570,15 +574,6 @@
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(446, 169);
             this.dataGridView3.TabIndex = 47;
-            // 
-            // btn_XoaHĐ
-            // 
-            this.btn_XoaHĐ.Location = new System.Drawing.Point(443, 476);
-            this.btn_XoaHĐ.Name = "btn_XoaHĐ";
-            this.btn_XoaHĐ.Size = new System.Drawing.Size(67, 23);
-            this.btn_XoaHĐ.TabIndex = 48;
-            this.btn_XoaHĐ.Text = "Xóa";
-            this.btn_XoaHĐ.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -602,7 +597,7 @@
             // 
             // btn_XemTB
             // 
-            this.btn_XemTB.Location = new System.Drawing.Point(83, 337);
+            this.btn_XemTB.Location = new System.Drawing.Point(83, 344);
             this.btn_XemTB.Name = "btn_XemTB";
             this.btn_XemTB.Size = new System.Drawing.Size(96, 23);
             this.btn_XemTB.TabIndex = 51;
@@ -612,33 +607,64 @@
             // listView1
             // 
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(7, 366);
+            this.listView1.Location = new System.Drawing.Point(7, 371);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(271, 133);
+            this.listView1.Size = new System.Drawing.Size(271, 130);
             this.listView1.TabIndex = 52;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // label22
+            // btn_Xoahopdong
             // 
-            this.label22.AutoSize = true;
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(791, 3);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(178, 13);
-            this.label22.TabIndex = 4;
-            this.label22.Text = "@2019 Quản lí phòng trọ, HVKTQS";
+            this.btn_Xoahopdong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_Xoahopdong.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Xoahopdong.BackgroundImage")));
+            this.btn_Xoahopdong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Xoahopdong.FlatAppearance.BorderSize = 0;
+            this.btn_Xoahopdong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Xoahopdong.Location = new System.Drawing.Point(464, 460);
+            this.btn_Xoahopdong.Name = "btn_Xoahopdong";
+            this.btn_Xoahopdong.Size = new System.Drawing.Size(51, 39);
+            this.btn_Xoahopdong.TabIndex = 80;
+            this.btn_Xoahopdong.UseVisualStyleBackColor = false;
+            // 
+            // btn_Capnhaphopdong
+            // 
+            this.btn_Capnhaphopdong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_Capnhaphopdong.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Capnhaphopdong.BackgroundImage")));
+            this.btn_Capnhaphopdong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Capnhaphopdong.FlatAppearance.BorderSize = 0;
+            this.btn_Capnhaphopdong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Capnhaphopdong.Location = new System.Drawing.Point(407, 460);
+            this.btn_Capnhaphopdong.Name = "btn_Capnhaphopdong";
+            this.btn_Capnhaphopdong.Size = new System.Drawing.Size(51, 39);
+            this.btn_Capnhaphopdong.TabIndex = 79;
+            this.btn_Capnhaphopdong.UseVisualStyleBackColor = false;
+            // 
+            // btn_ThemHopdong
+            // 
+            this.btn_ThemHopdong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_ThemHopdong.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ThemHopdong.BackgroundImage")));
+            this.btn_ThemHopdong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ThemHopdong.FlatAppearance.BorderSize = 0;
+            this.btn_ThemHopdong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ThemHopdong.Location = new System.Drawing.Point(350, 460);
+            this.btn_ThemHopdong.Name = "btn_ThemHopdong";
+            this.btn_ThemHopdong.Size = new System.Drawing.Size(51, 39);
+            this.btn_ThemHopdong.TabIndex = 78;
+            this.btn_ThemHopdong.UseVisualStyleBackColor = false;
             // 
             // UserControlThueMoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btn_Xoahopdong);
+            this.Controls.Add(this.btn_Capnhaphopdong);
+            this.Controls.Add(this.btn_ThemHopdong);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btn_XemTB);
             this.Controls.Add(this.btn_Loc);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.btn_XoaHĐ);
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.Comb_IDkhachhang_HD);
             this.Controls.Add(this.Comb_IDMaPhong_HD);
@@ -654,8 +680,6 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.btn_SuaHĐ);
-            this.Controls.Add(this.btn_ThemHĐ);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -711,15 +735,10 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button btn_Timkiem;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btn_XoaKH;
-        private System.Windows.Forms.Button btn_SuaKH;
-        private System.Windows.Forms.Button btn_ThemKH;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btn_ThemHĐ;
-        private System.Windows.Forms.Button btn_SuaHĐ;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
@@ -735,11 +754,16 @@
         private System.Windows.Forms.ComboBox Comb_IDMaPhong_HD;
         private System.Windows.Forms.ComboBox Comb_IDkhachhang_HD;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Button btn_XoaHĐ;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button btn_Loc;
         private System.Windows.Forms.Button btn_XemTB;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button btn_Xoakhachhang;
+        private System.Windows.Forms.Button btn_Capnhapkhachhang;
+        private System.Windows.Forms.Button btn_Themkhachhang;
+        private System.Windows.Forms.Button btn_Xoahopdong;
+        private System.Windows.Forms.Button btn_Capnhaphopdong;
+        private System.Windows.Forms.Button btn_ThemHopdong;
     }
 }
