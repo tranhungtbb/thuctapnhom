@@ -33,15 +33,17 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,7 +55,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(574, 70);
+            this.panel1.Size = new System.Drawing.Size(573, 70);
             this.panel1.TabIndex = 0;
             // 
             // button2
@@ -87,16 +89,6 @@
             this.label1.Size = new System.Drawing.Size(196, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "ăng Nhập";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(384, 308);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "@2019 Quản lí phòng trọ, HVKTQS";
             // 
             // label4
             // 
@@ -191,17 +183,37 @@
             this.bunifuMetroTextbox2.TabIndex = 13;
             this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.panel3.Controls.Add(this.label22);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 309);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(573, 21);
+            this.panel3.TabIndex = 29;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(390, 5);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(178, 13);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "@2019 Quản lí phòng trọ, HVKTQS";
+            // 
             // DangNhap
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(574, 330);
+            this.ClientSize = new System.Drawing.Size(573, 330);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.bunifuMetroTextbox2);
             this.Controls.Add(this.bunifuMetroTextbox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -211,6 +223,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,7 +235,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
@@ -229,5 +242,7 @@
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label22;
     }
 }
