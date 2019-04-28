@@ -48,14 +48,10 @@
             this.label_tital = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.userControlHome2 = new QuanLiPhongTro.UserControlHome();
-            this.userControlThueMoi1 = new QuanLiPhongTro.UserControlThueMoi();
-            this.userControlDanhMuc1 = new QuanLiPhongTro.UserControlDanhMuc();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,7 +68,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(157, 609);
+            this.panel1.Size = new System.Drawing.Size(157, 624);
             this.panel1.TabIndex = 0;
             // 
             // button11
@@ -90,6 +86,7 @@
             this.button11.Text = " Dịch vụ";
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button6
             // 
@@ -196,7 +193,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(157, 121);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -207,7 +204,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(157, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(989, 13);
+            this.panel2.Size = new System.Drawing.Size(997, 13);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -221,7 +218,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(157, 13);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(989, 35);
+            this.panel3.Size = new System.Drawing.Size(997, 35);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -293,10 +290,11 @@
             // label_tital
             // 
             this.label_tital.AutoSize = true;
-            this.label_tital.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.label_tital.Font = new System.Drawing.Font("Cooper Black", 20.25F);
+            this.label_tital.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.label_tital.Location = new System.Drawing.Point(6, 3);
             this.label_tital.Name = "label_tital";
-            this.label_tital.Size = new System.Drawing.Size(64, 26);
+            this.label_tital.Size = new System.Drawing.Size(92, 31);
             this.label_tital.TabIndex = 4;
             this.label_tital.Text = "Home";
             // 
@@ -306,53 +304,24 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(157, 48);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(989, 35);
+            this.panel4.Size = new System.Drawing.Size(997, 35);
             this.panel4.TabIndex = 5;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.userControlHome2);
-            this.panel5.Controls.Add(this.userControlThueMoi1);
-            this.panel5.Controls.Add(this.userControlDanhMuc1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(157, 83);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(989, 526);
+            this.panel5.Size = new System.Drawing.Size(997, 13);
             this.panel5.TabIndex = 6;
-            // 
-            // userControlHome2
-            // 
-            this.userControlHome2.BackColor = System.Drawing.Color.White;
-            this.userControlHome2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlHome2.Location = new System.Drawing.Point(0, 0);
-            this.userControlHome2.Name = "userControlHome2";
-            this.userControlHome2.Size = new System.Drawing.Size(989, 526);
-            this.userControlHome2.TabIndex = 3;
-            // 
-            // userControlThueMoi1
-            // 
-            this.userControlThueMoi1.BackColor = System.Drawing.Color.White;
-            this.userControlThueMoi1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlThueMoi1.Location = new System.Drawing.Point(0, 0);
-            this.userControlThueMoi1.Name = "userControlThueMoi1";
-            this.userControlThueMoi1.Size = new System.Drawing.Size(989, 526);
-            this.userControlThueMoi1.TabIndex = 2;
-            // 
-            // userControlDanhMuc1
-            // 
-            this.userControlDanhMuc1.BackColor = System.Drawing.Color.White;
-            this.userControlDanhMuc1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlDanhMuc1.Location = new System.Drawing.Point(0, 0);
-            this.userControlDanhMuc1.Name = "userControlDanhMuc1";
-            this.userControlDanhMuc1.Size = new System.Drawing.Size(989, 526);
-            this.userControlDanhMuc1.TabIndex = 1;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1146, 609);
+            this.ClientSize = new System.Drawing.Size(1154, 624);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -368,7 +337,6 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -394,8 +362,5 @@
         private System.Windows.Forms.Label label_tital;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private UserControlThueMoi userControlThueMoi1;
-        private UserControlDanhMuc userControlDanhMuc1;
-        private UserControlHome userControlHome2;
     }
 }

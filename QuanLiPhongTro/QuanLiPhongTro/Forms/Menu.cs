@@ -15,7 +15,7 @@ namespace QuanLiPhongTro.Forms
         public Menu()
         {
             InitializeComponent();
-            userControlHome2.BringToFront();
+            userControlHome1.BringToFront();
         }
 
        
@@ -27,7 +27,7 @@ namespace QuanLiPhongTro.Forms
 
         private void button5_Click(object sender, EventArgs e)
         {
-            userControlHome2.BringToFront();
+            userControlHome1.BringToFront();
             label_tital.Text = "Home";
         }
 
@@ -41,6 +41,12 @@ namespace QuanLiPhongTro.Forms
         {
             userControlThueMoi1.BringToFront();
             label_tital.Text = "Thuê mới";
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            userControlDV1.BringToFront();
+            label_tital.Text = "Dịch vụ";
         }
     }
 }

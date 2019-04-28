@@ -96,9 +96,9 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.panel3.Controls.Add(this.label22);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 505);
+            this.panel3.Location = new System.Drawing.Point(0, 507);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(989, 21);
+            this.panel3.Size = new System.Drawing.Size(997, 21);
             this.panel3.TabIndex = 28;
             // 
             // label22
@@ -571,7 +571,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label11);
             this.Name = "UserControlDanhMuc";
-            this.Size = new System.Drawing.Size(989, 526);
+            this.Size = new System.Drawing.Size(997, 528);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

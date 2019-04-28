@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLiPhongTro
 {
-    public partial class UserControlHome : UserControl
+    public partial class UserControlThongKe : UserControl
     {
-        public UserControlHome()
+        public UserControlThongKe()
         {
             InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

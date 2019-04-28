@@ -65,6 +65,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\UserControlTroGiup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlTroGiup.Designer.cs">
+      <DependentUpon>UserControlTroGiup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlDoanhThu.Designer.cs">
+      <DependentUpon>UserControlDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlThongKe.Designer.cs">
+      <DependentUpon>UserControlThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlDV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlDV.Designer.cs">
+      <DependentUpon>UserControlDV.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\UserControlDanhMuc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +122,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl\UserControlTroGiup.resx">
+      <DependentUpon>UserControlTroGiup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlDoanhThu.resx">
+      <DependentUpon>UserControlDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlThongKe.resx">
+      <DependentUpon>UserControlThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlDV.resx">
+      <DependentUpon>UserControlDV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\UserControlDanhMuc.resx">
       <DependentUpon>UserControlDanhMuc.cs</DependentUpon>
     </EmbeddedResource>

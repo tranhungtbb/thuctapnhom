@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLiPhongTro
 {
-    public partial class UserControlDichVu : UserControl
+    public partial class UserControlTroGiup : UserControl
     {
-        public UserControlDichVu()
+        public UserControlTroGiup()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
