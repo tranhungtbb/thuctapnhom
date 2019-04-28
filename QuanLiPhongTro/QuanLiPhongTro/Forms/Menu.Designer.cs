@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_Dichvu = new System.Windows.Forms.Button();
+            this.btn_Trogiup = new System.Windows.Forms.Button();
+            this.btn_Doanhthu = new System.Windows.Forms.Button();
+            this.btn_Thongke = new System.Windows.Forms.Button();
+            this.btn_Thuemoi = new System.Windows.Forms.Button();
+            this.btn_Danhmuc = new System.Windows.Forms.Button();
+            this.btn_Home = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -48,6 +48,7 @@
             this.label_tital = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panelControl = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -57,13 +58,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btn_Dichvu);
+            this.panel1.Controls.Add(this.btn_Trogiup);
+            this.panel1.Controls.Add(this.btn_Doanhthu);
+            this.panel1.Controls.Add(this.btn_Thongke);
+            this.panel1.Controls.Add(this.btn_Thuemoi);
+            this.panel1.Controls.Add(this.btn_Danhmuc);
+            this.panel1.Controls.Add(this.btn_Home);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -71,121 +72,124 @@
             this.panel1.Size = new System.Drawing.Size(157, 624);
             this.panel1.TabIndex = 0;
             // 
-            // button11
+            // btn_Dichvu
             // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(0, 421);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(157, 50);
-            this.button11.TabIndex = 7;
-            this.button11.Text = " Dịch vụ";
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.btn_Dichvu.FlatAppearance.BorderSize = 0;
+            this.btn_Dichvu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Dichvu.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.btn_Dichvu.ForeColor = System.Drawing.Color.White;
+            this.btn_Dichvu.Image = ((System.Drawing.Image)(resources.GetObject("btn_Dichvu.Image")));
+            this.btn_Dichvu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Dichvu.Location = new System.Drawing.Point(0, 421);
+            this.btn_Dichvu.Name = "btn_Dichvu";
+            this.btn_Dichvu.Size = new System.Drawing.Size(157, 50);
+            this.btn_Dichvu.TabIndex = 7;
+            this.btn_Dichvu.Text = " Dịch vụ";
+            this.btn_Dichvu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Dichvu.UseVisualStyleBackColor = true;
+            this.btn_Dichvu.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button6
+            // btn_Trogiup
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 477);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(157, 50);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Trợ giúp";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_Trogiup.FlatAppearance.BorderSize = 0;
+            this.btn_Trogiup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Trogiup.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.btn_Trogiup.ForeColor = System.Drawing.Color.White;
+            this.btn_Trogiup.Image = ((System.Drawing.Image)(resources.GetObject("btn_Trogiup.Image")));
+            this.btn_Trogiup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Trogiup.Location = new System.Drawing.Point(0, 477);
+            this.btn_Trogiup.Name = "btn_Trogiup";
+            this.btn_Trogiup.Size = new System.Drawing.Size(157, 50);
+            this.btn_Trogiup.TabIndex = 2;
+            this.btn_Trogiup.Text = "Trợ giúp";
+            this.btn_Trogiup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Trogiup.UseVisualStyleBackColor = true;
+            this.btn_Trogiup.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // btn_Doanhthu
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 365);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(157, 50);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "   Doanh thu";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_Doanhthu.FlatAppearance.BorderSize = 0;
+            this.btn_Doanhthu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Doanhthu.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.btn_Doanhthu.ForeColor = System.Drawing.Color.White;
+            this.btn_Doanhthu.Image = ((System.Drawing.Image)(resources.GetObject("btn_Doanhthu.Image")));
+            this.btn_Doanhthu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Doanhthu.Location = new System.Drawing.Point(0, 365);
+            this.btn_Doanhthu.Name = "btn_Doanhthu";
+            this.btn_Doanhthu.Size = new System.Drawing.Size(157, 50);
+            this.btn_Doanhthu.TabIndex = 3;
+            this.btn_Doanhthu.Text = "   Doanh thu";
+            this.btn_Doanhthu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Doanhthu.UseVisualStyleBackColor = true;
+            this.btn_Doanhthu.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // btn_Thongke
             // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 309);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(157, 50);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Thống kê";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn_Thongke.FlatAppearance.BorderSize = 0;
+            this.btn_Thongke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Thongke.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.btn_Thongke.ForeColor = System.Drawing.Color.White;
+            this.btn_Thongke.Image = ((System.Drawing.Image)(resources.GetObject("btn_Thongke.Image")));
+            this.btn_Thongke.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Thongke.Location = new System.Drawing.Point(0, 309);
+            this.btn_Thongke.Name = "btn_Thongke";
+            this.btn_Thongke.Size = new System.Drawing.Size(157, 50);
+            this.btn_Thongke.TabIndex = 4;
+            this.btn_Thongke.Text = "Thống kê";
+            this.btn_Thongke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Thongke.UseVisualStyleBackColor = true;
+            this.btn_Thongke.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button9
+            // btn_Thuemoi
             // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(0, 253);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(157, 50);
-            this.button9.TabIndex = 5;
-            this.button9.Text = " Thuê mới";
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btn_Thuemoi.FlatAppearance.BorderSize = 0;
+            this.btn_Thuemoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Thuemoi.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.btn_Thuemoi.ForeColor = System.Drawing.Color.White;
+            this.btn_Thuemoi.Image = ((System.Drawing.Image)(resources.GetObject("btn_Thuemoi.Image")));
+            this.btn_Thuemoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Thuemoi.Location = new System.Drawing.Point(0, 253);
+            this.btn_Thuemoi.Name = "btn_Thuemoi";
+            this.btn_Thuemoi.Size = new System.Drawing.Size(157, 50);
+            this.btn_Thuemoi.TabIndex = 5;
+            this.btn_Thuemoi.Text = " Thuê mới";
+            this.btn_Thuemoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Thuemoi.UseVisualStyleBackColor = true;
+            this.btn_Thuemoi.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button10
+            // btn_Danhmuc
             // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(0, 197);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(157, 50);
-            this.button10.TabIndex = 6;
-            this.button10.Text = " Danh mục";
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.btn_Danhmuc.FlatAppearance.BorderSize = 0;
+            this.btn_Danhmuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Danhmuc.Font = new System.Drawing.Font("Palatino Linotype", 14.25F);
+            this.btn_Danhmuc.ForeColor = System.Drawing.Color.White;
+            this.btn_Danhmuc.Image = ((System.Drawing.Image)(resources.GetObject("btn_Danhmuc.Image")));
+            this.btn_Danhmuc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Danhmuc.Location = new System.Drawing.Point(0, 197);
+            this.btn_Danhmuc.Name = "btn_Danhmuc";
+            this.btn_Danhmuc.Size = new System.Drawing.Size(157, 50);
+            this.btn_Danhmuc.TabIndex = 6;
+            this.btn_Danhmuc.Text = " Danh mục";
+            this.btn_Danhmuc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Danhmuc.UseVisualStyleBackColor = true;
+            this.btn_Danhmuc.Click += new System.EventHandler(this.button10_Click);
             // 
-            // button5
+            // btn_Home
             // 
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 143);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(157, 48);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Home";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Home.FlatAppearance.BorderSize = 0;
+            this.btn_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Home.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Home.ForeColor = System.Drawing.Color.White;
+            this.btn_Home.Image = ((System.Drawing.Image)(resources.GetObject("btn_Home.Image")));
+            this.btn_Home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Home.Location = new System.Drawing.Point(0, 143);
+            this.btn_Home.Name = "btn_Home";
+            this.btn_Home.Size = new System.Drawing.Size(157, 48);
+            this.btn_Home.TabIndex = 1;
+            this.btn_Home.Text = "Home";
+            this.btn_Home.UseVisualStyleBackColor = true;
+            this.btn_Home.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox1
             // 
@@ -316,12 +320,21 @@
             this.panel5.Size = new System.Drawing.Size(997, 13);
             this.panel5.TabIndex = 6;
             // 
+            // panelControl
+            // 
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl.Location = new System.Drawing.Point(157, 96);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Size = new System.Drawing.Size(997, 528);
+            this.panelControl.TabIndex = 7;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1154, 624);
+            this.Controls.Add(this.panelControl);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -351,16 +364,17 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_Trogiup;
+        private System.Windows.Forms.Button btn_Doanhthu;
+        private System.Windows.Forms.Button btn_Thongke;
+        private System.Windows.Forms.Button btn_Thuemoi;
+        private System.Windows.Forms.Button btn_Danhmuc;
+        private System.Windows.Forms.Button btn_Home;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btn_Dichvu;
         private System.Windows.Forms.Label label_tital;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panelControl;
     }
 }

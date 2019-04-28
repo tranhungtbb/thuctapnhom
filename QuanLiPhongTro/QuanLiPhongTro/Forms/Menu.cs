@@ -15,7 +15,6 @@ namespace QuanLiPhongTro.Forms
         public Menu()
         {
             InitializeComponent();
-            userControlHome1.BringToFront();
         }
 
        
@@ -27,26 +26,69 @@ namespace QuanLiPhongTro.Forms
 
         private void button5_Click(object sender, EventArgs e)
         {
-            userControlHome1.BringToFront();
             label_tital.Text = "Home";
+            UserControlHome home = new UserControlHome();
+            panelControl.Controls.Clear();
+            panelControl.Controls.Add(home);
+            home.Dock = DockStyle.Fill;
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            userControlDanhMuc1.BringToFront();
+            //userControlDanhMuc1.BringToFront();
             label_tital.Text = "Danh mục";
+            UserControlDanhMuc danhmuc = new UserControlDanhMuc();
+            panelControl.Controls.Clear();
+            panelControl.Controls.Add(danhmuc);
+            danhmuc.Dock = DockStyle.Fill;
+
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            userControlThueMoi1.BringToFront();
+            //userControlThueMoi1.BringToFront();
             label_tital.Text = "Thuê mới";
+            UserControlThueMoi thuemoi = new UserControlThueMoi();
+            panelControl.Controls.Clear();
+            panelControl.Controls.Add(thuemoi);
+            thuemoi.Dock = DockStyle.Fill;
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            userControlDV1.BringToFront();
+            //userControlDV1.BringToFront();
             label_tital.Text = "Dịch vụ";
+            UserControlDV dichvu = new UserControlDV();
+            panelControl.Controls.Clear();
+            panelControl.Controls.Add(dichvu);
+            dichvu.Dock = DockStyle.Fill;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            label_tital.Text = "Thống kê";
+            UserControlThongKe thongke = new UserControlThongKe();
+            panelControl.Controls.Clear();
+            panelControl.Controls.Add(thongke);
+            thongke.Dock = DockStyle.Fill;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            label_tital.Text = "Doanh thu";
+            UserControlDoanhThu doanhthu = new UserControlDoanhThu();
+            panelControl.Controls.Clear();
+            panelControl.Controls.Add(doanhthu);
+            doanhthu.Dock = DockStyle.Fill;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            label_tital.Text = "Trợ giúp";
+            UserControlTroGiup trogiup = new UserControlTroGiup();
+            panelControl.Controls.Clear();
+            panelControl.Controls.Add(trogiup);
+            trogiup.Dock = DockStyle.Fill;
         }
     }
 }
