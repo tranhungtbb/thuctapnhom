@@ -15,11 +15,31 @@ namespace QuanLiPhongTro
         public UserControlHome()
         {
             InitializeComponent();
+            ShowListPhongTrong();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
+
+        void ShowListPhongTrong()
+        {
+            listView_Phongtrong.Items.Clear();
+
+            List<QuanLiPhongTro.DTO.PhongTrong> listPT = Danhsach.ThongKe.Instance.ListPTr();
+            foreach (QuanLiPhongTro.DTO.PhongTrong i in listPT)
+            {
+                ListViewItem lvItem = new ListViewItem(i.MAPHONG.ToString());
+                lvItem.SubItems.Add(i.TENPHONG.ToString());
+                lvItem.SubItems.Add(i.DIENTICH.ToString());
+                lvItem.SubItems.Add(i.DONGIA.ToString());
+                lvItem.SubItems.Add(i.SL.ToString());
+                lvItem.SubItems.Add(i.MOTA.ToString());
+
+                listView_Phongtrong.Items.Add(lvItem);
+            }
+        }
+
     }
 }

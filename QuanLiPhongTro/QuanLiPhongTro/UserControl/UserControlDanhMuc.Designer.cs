@@ -34,15 +34,15 @@
             this.label22 = new System.Windows.Forms.Label();
             this.Comb_stt = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_CMND = new System.Windows.Forms.TextBox();
+            this.txt_GhiChu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_SDT = new System.Windows.Forms.TextBox();
+            this.txt_TenThietbi = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt_Quequan = new System.Windows.Forms.TextBox();
+            this.txt_Mathietbi = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comb_IDPhong = new System.Windows.Forms.ComboBox();
+            this.dataGridView_LoaiPhong = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Mota = new System.Windows.Forms.TextBox();
@@ -59,25 +59,31 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.dataGridView_ThietBi = new System.Windows.Forms.DataGridView();
+            this.btn_ThemTrangBi = new System.Windows.Forms.Button();
+            this.btn_UpdateTrangBi = new System.Windows.Forms.Button();
+            this.btn_XoaTrangBi = new System.Windows.Forms.Button();
+            this.btn_XoaLoaiphong = new System.Windows.Forms.Button();
+            this.btn_CapNhapLoaiPhong = new System.Windows.Forms.Button();
+            this.btn_ThemLoaiphong = new System.Windows.Forms.Button();
+            this.btn_XoaThietbi = new System.Windows.Forms.Button();
+            this.btn_CapnhapThietbi = new System.Windows.Forms.Button();
+            this.btn_ThemThietbi = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comb_IDThietbi = new System.Windows.Forms.ComboBox();
+            this.listView_ThietBi = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.comb_Sl = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_LoaiPhong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ThietBi)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -115,8 +121,8 @@
             // 
             this.Comb_stt.FormattingEnabled = true;
             this.Comb_stt.Items.AddRange(new object[] {
-            "0",
-            "1"});
+            "Tốt",
+            "Không tốt"});
             this.Comb_stt.Location = new System.Drawing.Point(93, 106);
             this.Comb_stt.Name = "Comb_stt";
             this.Comb_stt.Size = new System.Drawing.Size(126, 21);
@@ -132,12 +138,12 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "Mã thiết bị";
             // 
-            // txt_CMND
+            // txt_GhiChu
             // 
-            this.txt_CMND.Location = new System.Drawing.Point(93, 137);
-            this.txt_CMND.Name = "txt_CMND";
-            this.txt_CMND.Size = new System.Drawing.Size(126, 20);
-            this.txt_CMND.TabIndex = 35;
+            this.txt_GhiChu.Location = new System.Drawing.Point(93, 137);
+            this.txt_GhiChu.Name = "txt_GhiChu";
+            this.txt_GhiChu.Size = new System.Drawing.Size(126, 20);
+            this.txt_GhiChu.TabIndex = 35;
             // 
             // label5
             // 
@@ -149,12 +155,12 @@
             this.label5.TabIndex = 30;
             this.label5.Text = "Tên thiết bị";
             // 
-            // txt_SDT
+            // txt_TenThietbi
             // 
-            this.txt_SDT.Location = new System.Drawing.Point(93, 73);
-            this.txt_SDT.Name = "txt_SDT";
-            this.txt_SDT.Size = new System.Drawing.Size(126, 20);
-            this.txt_SDT.TabIndex = 34;
+            this.txt_TenThietbi.Location = new System.Drawing.Point(93, 73);
+            this.txt_TenThietbi.Name = "txt_TenThietbi";
+            this.txt_TenThietbi.Size = new System.Drawing.Size(126, 20);
+            this.txt_TenThietbi.TabIndex = 34;
             // 
             // label6
             // 
@@ -166,12 +172,12 @@
             this.label6.TabIndex = 31;
             this.label6.Text = "Tình trạng";
             // 
-            // txt_Quequan
+            // txt_Mathietbi
             // 
-            this.txt_Quequan.Location = new System.Drawing.Point(93, 41);
-            this.txt_Quequan.Name = "txt_Quequan";
-            this.txt_Quequan.Size = new System.Drawing.Size(126, 20);
-            this.txt_Quequan.TabIndex = 33;
+            this.txt_Mathietbi.Location = new System.Drawing.Point(93, 41);
+            this.txt_Mathietbi.Name = "txt_Mathietbi";
+            this.txt_Mathietbi.Size = new System.Drawing.Size(126, 20);
+            this.txt_Mathietbi.TabIndex = 33;
             // 
             // label8
             // 
@@ -188,28 +194,30 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(665, 25);
+            this.label1.Location = new System.Drawing.Point(640, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 19);
+            this.label1.Size = new System.Drawing.Size(61, 19);
             this.label1.TabIndex = 41;
-            this.label1.Text = "Trang bị của phòng:";
+            this.label1.Text = "Phòng";
             // 
-            // comboBox1
+            // comb_IDPhong
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(835, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(70, 21);
-            this.comboBox1.TabIndex = 42;
+            this.comb_IDPhong.FormattingEnabled = true;
+            this.comb_IDPhong.Location = new System.Drawing.Point(712, 22);
+            this.comb_IDPhong.Name = "comb_IDPhong";
+            this.comb_IDPhong.Size = new System.Drawing.Size(51, 21);
+            this.comb_IDPhong.TabIndex = 42;
             // 
-            // dataGridView1
+            // dataGridView_LoaiPhong
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(363, 336);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(363, 142);
-            this.dataGridView1.TabIndex = 44;
+            this.dataGridView_LoaiPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView_LoaiPhong.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.dataGridView_LoaiPhong.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_LoaiPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_LoaiPhong.Location = new System.Drawing.Point(338, 336);
+            this.dataGridView_LoaiPhong.Name = "dataGridView_LoaiPhong";
+            this.dataGridView_LoaiPhong.Size = new System.Drawing.Size(491, 142);
+            this.dataGridView_LoaiPhong.TabIndex = 44;
             // 
             // panel1
             // 
@@ -353,21 +361,13 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(911, 25);
+            this.button4.Location = new System.Drawing.Point(886, 12);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(51, 39);
             this.button4.TabIndex = 65;
-            this.button4.Text = "Xem";
+            this.button4.Text = "Xem trang bị";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(669, 126);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(317, 161);
-            this.dataGridView2.TabIndex = 66;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 
@@ -377,170 +377,256 @@
             this.panel2.Size = new System.Drawing.Size(10, 297);
             this.panel2.TabIndex = 67;
             // 
-            // dataGridView3
+            // dataGridView_ThietBi
             // 
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(248, 41);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(341, 150);
-            this.dataGridView3.TabIndex = 68;
+            this.dataGridView_ThietBi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView_ThietBi.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.dataGridView_ThietBi.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_ThietBi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_ThietBi.Location = new System.Drawing.Point(248, 41);
+            this.dataGridView_ThietBi.Name = "dataGridView_ThietBi";
+            this.dataGridView_ThietBi.Size = new System.Drawing.Size(355, 150);
+            this.dataGridView_ThietBi.TabIndex = 68;
             // 
-            // button5
+            // btn_ThemTrangBi
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(821, 81);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(51, 39);
-            this.button5.TabIndex = 69;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn_ThemTrangBi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_ThemTrangBi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ThemTrangBi.BackgroundImage")));
+            this.btn_ThemTrangBi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ThemTrangBi.FlatAppearance.BorderSize = 0;
+            this.btn_ThemTrangBi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ThemTrangBi.Location = new System.Drawing.Point(943, 12);
+            this.btn_ThemTrangBi.Name = "btn_ThemTrangBi";
+            this.btn_ThemTrangBi.Size = new System.Drawing.Size(51, 39);
+            this.btn_ThemTrangBi.TabIndex = 69;
+            this.btn_ThemTrangBi.UseVisualStyleBackColor = false;
+            this.btn_ThemTrangBi.Click += new System.EventHandler(this.btn_ThemTrangBi_Click);
             // 
-            // button6
+            // btn_UpdateTrangBi
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(878, 81);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(51, 39);
-            this.button6.TabIndex = 70;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btn_UpdateTrangBi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_UpdateTrangBi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_UpdateTrangBi.BackgroundImage")));
+            this.btn_UpdateTrangBi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_UpdateTrangBi.FlatAppearance.BorderSize = 0;
+            this.btn_UpdateTrangBi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UpdateTrangBi.Location = new System.Drawing.Point(886, 57);
+            this.btn_UpdateTrangBi.Name = "btn_UpdateTrangBi";
+            this.btn_UpdateTrangBi.Size = new System.Drawing.Size(51, 39);
+            this.btn_UpdateTrangBi.TabIndex = 70;
+            this.btn_UpdateTrangBi.UseVisualStyleBackColor = false;
+            this.btn_UpdateTrangBi.Click += new System.EventHandler(this.btn_UpdateTrangBi_Click);
             // 
-            // button7
+            // btn_XoaTrangBi
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(935, 81);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(51, 39);
-            this.button7.TabIndex = 71;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btn_XoaTrangBi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_XoaTrangBi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_XoaTrangBi.BackgroundImage")));
+            this.btn_XoaTrangBi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_XoaTrangBi.FlatAppearance.BorderSize = 0;
+            this.btn_XoaTrangBi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XoaTrangBi.Location = new System.Drawing.Point(943, 57);
+            this.btn_XoaTrangBi.Name = "btn_XoaTrangBi";
+            this.btn_XoaTrangBi.Size = new System.Drawing.Size(51, 39);
+            this.btn_XoaTrangBi.TabIndex = 71;
+            this.btn_XoaTrangBi.UseVisualStyleBackColor = false;
+            this.btn_XoaTrangBi.Click += new System.EventHandler(this.btn_XoaTrangBi_Click);
             // 
-            // button1
+            // btn_XoaLoaiphong
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(794, 421);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 39);
-            this.button1.TabIndex = 74;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_XoaLoaiphong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_XoaLoaiphong.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_XoaLoaiphong.BackgroundImage")));
+            this.btn_XoaLoaiphong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_XoaLoaiphong.FlatAppearance.BorderSize = 0;
+            this.btn_XoaLoaiphong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XoaLoaiphong.Location = new System.Drawing.Point(835, 421);
+            this.btn_XoaLoaiphong.Name = "btn_XoaLoaiphong";
+            this.btn_XoaLoaiphong.Size = new System.Drawing.Size(51, 39);
+            this.btn_XoaLoaiphong.TabIndex = 74;
+            this.btn_XoaLoaiphong.UseVisualStyleBackColor = false;
+            this.btn_XoaLoaiphong.Click += new System.EventHandler(this.btn_XoaLoaiphong_Click);
             // 
-            // button2
+            // btn_CapNhapLoaiPhong
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(794, 381);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(51, 39);
-            this.button2.TabIndex = 73;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_CapNhapLoaiPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_CapNhapLoaiPhong.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_CapNhapLoaiPhong.BackgroundImage")));
+            this.btn_CapNhapLoaiPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_CapNhapLoaiPhong.FlatAppearance.BorderSize = 0;
+            this.btn_CapNhapLoaiPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CapNhapLoaiPhong.Location = new System.Drawing.Point(835, 381);
+            this.btn_CapNhapLoaiPhong.Name = "btn_CapNhapLoaiPhong";
+            this.btn_CapNhapLoaiPhong.Size = new System.Drawing.Size(51, 39);
+            this.btn_CapNhapLoaiPhong.TabIndex = 73;
+            this.btn_CapNhapLoaiPhong.UseVisualStyleBackColor = false;
+            this.btn_CapNhapLoaiPhong.Click += new System.EventHandler(this.btn_CapNhapLoaiPhong_Click);
             // 
-            // button3
+            // btn_ThemLoaiphong
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(794, 336);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(51, 39);
-            this.button3.TabIndex = 72;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_ThemLoaiphong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_ThemLoaiphong.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ThemLoaiphong.BackgroundImage")));
+            this.btn_ThemLoaiphong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ThemLoaiphong.FlatAppearance.BorderSize = 0;
+            this.btn_ThemLoaiphong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ThemLoaiphong.Location = new System.Drawing.Point(835, 336);
+            this.btn_ThemLoaiphong.Name = "btn_ThemLoaiphong";
+            this.btn_ThemLoaiphong.Size = new System.Drawing.Size(51, 39);
+            this.btn_ThemLoaiphong.TabIndex = 72;
+            this.btn_ThemLoaiphong.UseVisualStyleBackColor = false;
+            this.btn_ThemLoaiphong.Click += new System.EventHandler(this.btn_ThemLoaiphong_Click);
             // 
-            // button8
+            // btn_XoaThietbi
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(162, 171);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(51, 39);
-            this.button8.TabIndex = 77;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btn_XoaThietbi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_XoaThietbi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_XoaThietbi.BackgroundImage")));
+            this.btn_XoaThietbi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_XoaThietbi.FlatAppearance.BorderSize = 0;
+            this.btn_XoaThietbi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XoaThietbi.Location = new System.Drawing.Point(162, 171);
+            this.btn_XoaThietbi.Name = "btn_XoaThietbi";
+            this.btn_XoaThietbi.Size = new System.Drawing.Size(51, 39);
+            this.btn_XoaThietbi.TabIndex = 77;
+            this.btn_XoaThietbi.UseVisualStyleBackColor = false;
+            this.btn_XoaThietbi.Click += new System.EventHandler(this.btn_XoaThietbi_Click);
             // 
-            // button9
+            // btn_CapnhapThietbi
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(105, 171);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(51, 39);
-            this.button9.TabIndex = 76;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btn_CapnhapThietbi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_CapnhapThietbi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_CapnhapThietbi.BackgroundImage")));
+            this.btn_CapnhapThietbi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_CapnhapThietbi.FlatAppearance.BorderSize = 0;
+            this.btn_CapnhapThietbi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CapnhapThietbi.Location = new System.Drawing.Point(105, 171);
+            this.btn_CapnhapThietbi.Name = "btn_CapnhapThietbi";
+            this.btn_CapnhapThietbi.Size = new System.Drawing.Size(51, 39);
+            this.btn_CapnhapThietbi.TabIndex = 76;
+            this.btn_CapnhapThietbi.UseVisualStyleBackColor = false;
+            this.btn_CapnhapThietbi.Click += new System.EventHandler(this.btn_CapnhapThietbi_Click);
             // 
-            // button10
+            // btn_ThemThietbi
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(48, 171);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(51, 39);
-            this.button10.TabIndex = 75;
-            this.button10.UseVisualStyleBackColor = false;
+            this.btn_ThemThietbi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
+            this.btn_ThemThietbi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ThemThietbi.BackgroundImage")));
+            this.btn_ThemThietbi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ThemThietbi.FlatAppearance.BorderSize = 0;
+            this.btn_ThemThietbi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ThemThietbi.Location = new System.Drawing.Point(48, 171);
+            this.btn_ThemThietbi.Name = "btn_ThemThietbi";
+            this.btn_ThemThietbi.Size = new System.Drawing.Size(51, 39);
+            this.btn_ThemThietbi.TabIndex = 75;
+            this.btn_ThemThietbi.UseVisualStyleBackColor = false;
+            this.btn_ThemThietbi.Click += new System.EventHandler(this.btn_ThemThietbi_Click);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(665, 47);
+            this.label14.Location = new System.Drawing.Point(640, 46);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(68, 19);
             this.label14.TabIndex = 78;
             this.label14.Text = "Thiết bị";
             // 
-            // comboBox2
+            // comb_IDThietbi
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(835, 48);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(70, 21);
-            this.comboBox2.TabIndex = 79;
+            this.comb_IDThietbi.FormattingEnabled = true;
+            this.comb_IDThietbi.Location = new System.Drawing.Point(712, 44);
+            this.comb_IDThietbi.Name = "comb_IDThietbi";
+            this.comb_IDThietbi.Size = new System.Drawing.Size(168, 21);
+            this.comb_IDThietbi.TabIndex = 79;
+            // 
+            // listView_ThietBi
+            // 
+            this.listView_ThietBi.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView_ThietBi.GridLines = true;
+            this.listView_ThietBi.Location = new System.Drawing.Point(661, 127);
+            this.listView_ThietBi.Name = "listView_ThietBi";
+            this.listView_ThietBi.Size = new System.Drawing.Size(308, 160);
+            this.listView_ThietBi.TabIndex = 80;
+            this.listView_ThietBi.UseCompatibleStateImageBehavior = false;
+            this.listView_ThietBi.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Mã thiết bị";
+            this.columnHeader1.Width = 61;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tên thiết bị";
+            this.columnHeader2.Width = 77;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tình trạng";
+            this.columnHeader3.Width = 61;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Ghi chú";
+            this.columnHeader4.Width = 102;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(748, 105);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(148, 19);
+            this.label15.TabIndex = 81;
+            this.label15.Text = "Thông tin thiết bị";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(640, 73);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(70, 19);
+            this.label16.TabIndex = 82;
+            this.label16.Text = "Số lượng";
+            // 
+            // comb_Sl
+            // 
+            this.comb_Sl.FormattingEnabled = true;
+            this.comb_Sl.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.comb_Sl.Location = new System.Drawing.Point(712, 67);
+            this.comb_Sl.Name = "comb_Sl";
+            this.comb_Sl.Size = new System.Drawing.Size(34, 21);
+            this.comb_Sl.TabIndex = 83;
             // 
             // UserControlDanhMuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comb_Sl);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.listView_ThietBi);
+            this.Controls.Add(this.comb_IDThietbi);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.dataGridView3);
+            this.Controls.Add(this.btn_XoaThietbi);
+            this.Controls.Add(this.btn_CapnhapThietbi);
+            this.Controls.Add(this.btn_ThemThietbi);
+            this.Controls.Add(this.btn_XoaLoaiphong);
+            this.Controls.Add(this.btn_CapNhapLoaiPhong);
+            this.Controls.Add(this.btn_ThemLoaiphong);
+            this.Controls.Add(this.btn_XoaTrangBi);
+            this.Controls.Add(this.btn_UpdateTrangBi);
+            this.Controls.Add(this.btn_ThemTrangBi);
+            this.Controls.Add(this.dataGridView_ThietBi);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox3);
@@ -557,16 +643,16 @@
             this.Controls.Add(this.txt_Maloaiphong);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dataGridView_LoaiPhong);
+            this.Controls.Add(this.comb_IDPhong);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Comb_stt);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txt_CMND);
+            this.Controls.Add(this.txt_GhiChu);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txt_SDT);
+            this.Controls.Add(this.txt_TenThietbi);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txt_Quequan);
+            this.Controls.Add(this.txt_Mathietbi);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label11);
@@ -574,10 +660,9 @@
             this.Size = new System.Drawing.Size(997, 528);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_LoaiPhong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ThietBi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -590,15 +675,15 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.ComboBox Comb_stt;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_CMND;
+        private System.Windows.Forms.TextBox txt_GhiChu;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_SDT;
+        private System.Windows.Forms.TextBox txt_TenThietbi;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_Quequan;
+        private System.Windows.Forms.TextBox txt_Mathietbi;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox comb_IDPhong;
+        private System.Windows.Forms.DataGridView dataGridView_LoaiPhong;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_Mota;
@@ -615,19 +700,26 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.DataGridView dataGridView_ThietBi;
+        private System.Windows.Forms.Button btn_ThemTrangBi;
+        private System.Windows.Forms.Button btn_UpdateTrangBi;
+        private System.Windows.Forms.Button btn_XoaTrangBi;
+        private System.Windows.Forms.Button btn_XoaLoaiphong;
+        private System.Windows.Forms.Button btn_CapNhapLoaiPhong;
+        private System.Windows.Forms.Button btn_ThemLoaiphong;
+        private System.Windows.Forms.Button btn_XoaThietbi;
+        private System.Windows.Forms.Button btn_CapnhapThietbi;
+        private System.Windows.Forms.Button btn_ThemThietbi;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comb_IDThietbi;
+        private System.Windows.Forms.ListView listView_ThietBi;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox comb_Sl;
     }
 }

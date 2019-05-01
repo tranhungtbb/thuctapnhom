@@ -51,17 +51,16 @@
             this.btn_Capnhapkhachhang = new System.Windows.Forms.Button();
             this.txt_IDKhachhang = new System.Windows.Forms.TextBox();
             this.btn_Themkhachhang = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewKH = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.Comb_IDphong_TB = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_searchKH = new System.Windows.Forms.TextBox();
             this.btn_Timkiem = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
@@ -78,18 +77,22 @@
             this.txt_Ghichu = new System.Windows.Forms.TextBox();
             this.Comb_IDMaPhong_HD = new System.Windows.Forms.ComboBox();
             this.Comb_IDkhachhang_HD = new System.Windows.Forms.ComboBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewHĐ = new System.Windows.Forms.DataGridView();
             this.label21 = new System.Windows.Forms.Label();
             this.btn_Loc = new System.Windows.Forms.Button();
             this.btn_XemTB = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btn_Xoahopdong = new System.Windows.Forms.Button();
             this.btn_Capnhaphopdong = new System.Windows.Forms.Button();
             this.btn_ThemHopdong = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKH)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHĐ)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -278,6 +281,7 @@
             this.btn_Xoakhachhang.Size = new System.Drawing.Size(51, 39);
             this.btn_Xoakhachhang.TabIndex = 77;
             this.btn_Xoakhachhang.UseVisualStyleBackColor = false;
+            this.btn_Xoakhachhang.Click += new System.EventHandler(this.btn_Xoakhachhang_Click);
             // 
             // label10
             // 
@@ -301,6 +305,7 @@
             this.btn_Capnhapkhachhang.Size = new System.Drawing.Size(51, 39);
             this.btn_Capnhapkhachhang.TabIndex = 76;
             this.btn_Capnhapkhachhang.UseVisualStyleBackColor = false;
+            this.btn_Capnhapkhachhang.Click += new System.EventHandler(this.btn_Capnhapkhachhang_Click);
             // 
             // txt_IDKhachhang
             // 
@@ -321,14 +326,18 @@
             this.btn_Themkhachhang.Size = new System.Drawing.Size(51, 39);
             this.btn_Themkhachhang.TabIndex = 75;
             this.btn_Themkhachhang.UseVisualStyleBackColor = false;
+            this.btn_Themkhachhang.Click += new System.EventHandler(this.btn_Themkhachhang_Click);
             // 
-            // dataGridView1
+            // dataGridViewKH
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(299, 67);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(601, 171);
-            this.dataGridView1.TabIndex = 17;
+            this.dataGridViewKH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridViewKH.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.dataGridViewKH.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewKH.Location = new System.Drawing.Point(350, 67);
+            this.dataGridViewKH.Name = "dataGridViewKH";
+            this.dataGridViewKH.Size = new System.Drawing.Size(612, 171);
+            this.dataGridViewKH.TabIndex = 17;
             // 
             // label9
             // 
@@ -370,12 +379,12 @@
             this.label12.TabIndex = 22;
             this.label12.Text = "Nhập tên khách hàng";
             // 
-            // textBox6
+            // txt_searchKH
             // 
-            this.textBox6.Location = new System.Drawing.Point(596, 40);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(138, 20);
-            this.textBox6.TabIndex = 23;
+            this.txt_searchKH.Location = new System.Drawing.Point(596, 40);
+            this.txt_searchKH.Name = "txt_searchKH";
+            this.txt_searchKH.Size = new System.Drawing.Size(138, 20);
+            this.txt_searchKH.TabIndex = 23;
             // 
             // btn_Timkiem
             // 
@@ -389,6 +398,7 @@
             this.btn_Timkiem.Size = new System.Drawing.Size(28, 29);
             this.btn_Timkiem.TabIndex = 24;
             this.btn_Timkiem.UseVisualStyleBackColor = false;
+            this.btn_Timkiem.Click += new System.EventHandler(this.btn_Timkiem_Click);
             // 
             // panel3
             // 
@@ -421,21 +431,12 @@
             this.label13.TabIndex = 27;
             this.label13.Text = "Hợp đồng";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(968, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(21, 505);
-            this.panel2.TabIndex = 28;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.panel4.Location = new System.Drawing.Point(284, 240);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(685, 10);
+            this.panel4.Size = new System.Drawing.Size(702, 10);
             this.panel4.TabIndex = 29;
             // 
             // panel5
@@ -567,20 +568,23 @@
             this.Comb_IDkhachhang_HD.Size = new System.Drawing.Size(100, 21);
             this.Comb_IDkhachhang_HD.TabIndex = 46;
             // 
-            // dataGridView3
+            // dataGridViewHĐ
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(516, 330);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(446, 169);
-            this.dataGridView3.TabIndex = 47;
+            this.dataGridViewHĐ.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridViewHĐ.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.dataGridViewHĐ.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewHĐ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHĐ.Location = new System.Drawing.Point(516, 301);
+            this.dataGridViewHĐ.Name = "dataGridViewHĐ";
+            this.dataGridViewHĐ.Size = new System.Drawing.Size(446, 198);
+            this.dataGridViewHĐ.TabIndex = 47;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(718, 308);
+            this.label21.Location = new System.Drawing.Point(718, 276);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(167, 19);
             this.label21.TabIndex = 49;
@@ -588,7 +592,7 @@
             // 
             // btn_Loc
             // 
-            this.btn_Loc.Location = new System.Drawing.Point(895, 304);
+            this.btn_Loc.Location = new System.Drawing.Point(895, 272);
             this.btn_Loc.Name = "btn_Loc";
             this.btn_Loc.Size = new System.Drawing.Size(67, 23);
             this.btn_Loc.TabIndex = 50;
@@ -603,16 +607,42 @@
             this.btn_XemTB.TabIndex = 51;
             this.btn_XemTB.Text = "Xem thông tin";
             this.btn_XemTB.UseVisualStyleBackColor = true;
+            this.btn_XemTB.Click += new System.EventHandler(this.btn_XemTB_Click);
             // 
             // listView1
             // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(7, 371);
+            this.listView1.Location = new System.Drawing.Point(7, 369);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(271, 130);
             this.listView1.TabIndex = 52;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Mã thiết bị";
+            this.columnHeader1.Width = 61;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tên thiết bị";
+            this.columnHeader2.Width = 77;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tình trạng";
+            this.columnHeader3.Width = 61;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Ghi chú";
+            this.columnHeader4.Width = 73;
             // 
             // btn_Xoahopdong
             // 
@@ -626,6 +656,7 @@
             this.btn_Xoahopdong.Size = new System.Drawing.Size(51, 39);
             this.btn_Xoahopdong.TabIndex = 80;
             this.btn_Xoahopdong.UseVisualStyleBackColor = false;
+            this.btn_Xoahopdong.Click += new System.EventHandler(this.btn_Xoahopdong_Click);
             // 
             // btn_Capnhaphopdong
             // 
@@ -639,6 +670,7 @@
             this.btn_Capnhaphopdong.Size = new System.Drawing.Size(51, 39);
             this.btn_Capnhaphopdong.TabIndex = 79;
             this.btn_Capnhaphopdong.UseVisualStyleBackColor = false;
+            this.btn_Capnhaphopdong.Click += new System.EventHandler(this.btn_Capnhaphopdong_Click);
             // 
             // btn_ThemHopdong
             // 
@@ -652,6 +684,7 @@
             this.btn_ThemHopdong.Size = new System.Drawing.Size(51, 39);
             this.btn_ThemHopdong.TabIndex = 78;
             this.btn_ThemHopdong.UseVisualStyleBackColor = false;
+            this.btn_ThemHopdong.Click += new System.EventHandler(this.btn_ThemHopdong_Click);
             // 
             // UserControlThueMoi
             // 
@@ -665,7 +698,7 @@
             this.Controls.Add(this.btn_XemTB);
             this.Controls.Add(this.btn_Loc);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.dataGridView3);
+            this.Controls.Add(this.dataGridViewHĐ);
             this.Controls.Add(this.Comb_IDkhachhang_HD);
             this.Controls.Add(this.Comb_IDMaPhong_HD);
             this.Controls.Add(this.txt_Ghichu);
@@ -682,25 +715,24 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btn_Timkiem);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txt_searchKH);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.Comb_IDphong_TB);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewKH);
             this.Controls.Add(this.panel1);
             this.Name = "UserControlThueMoi";
             this.Size = new System.Drawing.Size(989, 526);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKH)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHĐ)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -725,18 +757,17 @@
         private System.Windows.Forms.ComboBox Comb_MaPhong;
         private System.Windows.Forms.DateTimePicker Ngaysinh;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewKH;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txt_IDKhachhang;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox Comb_IDphong_TB;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_searchKH;
         private System.Windows.Forms.Button btn_Timkiem;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label14;
@@ -753,7 +784,7 @@
         private System.Windows.Forms.TextBox txt_Ghichu;
         private System.Windows.Forms.ComboBox Comb_IDMaPhong_HD;
         private System.Windows.Forms.ComboBox Comb_IDkhachhang_HD;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridViewHĐ;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button btn_Loc;
         private System.Windows.Forms.Button btn_XemTB;
@@ -765,5 +796,9 @@
         private System.Windows.Forms.Button btn_Xoahopdong;
         private System.Windows.Forms.Button btn_Capnhaphopdong;
         private System.Windows.Forms.Button btn_ThemHopdong;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

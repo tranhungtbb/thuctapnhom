@@ -178,7 +178,7 @@
         gUD7dZE8TwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_ThemTrangBi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAHtQTFRF////
         AAAAYWFhz8/PMDAw3NzcS0tL6OjotLS0hoaGdHR0paWllpaWwsLC9PT0/Pz81tbWPj4+WFhYeXl52dnZ
@@ -227,7 +227,7 @@
         K2WVdInskxoAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_UpdateTrangBi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAH5QTFRF////
         AAAA+vr6ZmZmjY2N9PT0kJCQ7+/v3t7e0dHRaWlpiYmJysrK19fX4ODg/Pz8m5ubS0tLp6ensrKy6+vr
@@ -276,7 +276,7 @@
         G8+KdquVZnc8aA8ePHjwP6VS+Q8DO4JjSW/J7wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_XoaTrangBi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAHVQTFRF////
         AAAA+/v73NzcgoKCJiYmk5OT6urqXl5e7e3t19fXzs7OysrK9PT0h4eHQUFBERERdXV1UVFRvLy8e3t7
@@ -313,7 +313,7 @@
         RZIuZ9s+9cE9iml/O1umjs6hTucvtVd8C1wLnqMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_XoaLoaiphong.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAHVQTFRF////
         AAAA+/v73NzcgoKCJiYmk5OT6urqXl5e7e3t19fXzs7OysrK9PT0h4eHQUFBERERdXV1UVFRvLy8e3t7
@@ -350,7 +350,7 @@
         RZIuZ9s+9cE9iml/O1umjs6hTucvtVd8C1wLnqMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_CapNhapLoaiPhong.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAH5QTFRF////
         AAAA+vr6ZmZmjY2N9PT0kJCQ7+/v3t7e0dHRaWlpiYmJysrK19fX4ODg/Pz8m5ubS0tLp6ensrKy6+vr
@@ -399,7 +399,7 @@
         G8+KdquVZnc8aA8ePHjwP6VS+Q8DO4JjSW/J7wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_ThemLoaiphong.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAHtQTFRF////
         AAAAYWFhz8/PMDAw3NzcS0tL6OjotLS0hoaGdHR0paWllpaWwsLC9PT0/Pz81tbWPj4+WFhYeXl52dnZ
@@ -448,7 +448,7 @@
         K2WVdInskxoAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_XoaThietbi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAHVQTFRF////
         AAAA+/v73NzcgoKCJiYmk5OT6urqXl5e7e3t19fXzs7OysrK9PT0h4eHQUFBERERdXV1UVFRvLy8e3t7
@@ -485,7 +485,7 @@
         RZIuZ9s+9cE9iml/O1umjs6hTucvtVd8C1wLnqMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_CapnhapThietbi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAH5QTFRF////
         AAAA+vr6ZmZmjY2N9PT0kJCQ7+/v3t7e0dHRaWlpiYmJysrK19fX4ODg/Pz8m5ubS0tLp6ensrKy6+vr
@@ -534,7 +534,7 @@
         G8+KdquVZnc8aA8ePHjwP6VS+Q8DO4JjSW/J7wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button10.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_ThemThietbi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABGdBTUEAALGPC/xhBQAAAHtQTFRF////
         AAAAYWFhz8/PMDAw3NzcS0tL6OjotLS0hoaGdHR0paWllpaWwsLC9PT0/Pz81tbWPj4+WFhYeXl52dnZ

@@ -15,13 +15,22 @@ namespace QuanLiPhongTro.Forms
         public Menu()
         {
             InitializeComponent();
+            UserControlHome home = new UserControlHome();
+            panelControl.Controls.Add(home);
+            home.Dock = DockStyle.Fill;
         }
 
        
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult r;
+            r = MessageBox.Show("Bạn có muốn thoát hay không?", " Thông báo !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+                DangNhap d = new DangNhap();
+                this.Close();
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)

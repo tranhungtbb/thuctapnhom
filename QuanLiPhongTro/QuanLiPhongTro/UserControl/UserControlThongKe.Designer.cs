@@ -59,7 +59,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(791, 3);
+            this.label22.Location = new System.Drawing.Point(790, 3);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(178, 13);
             this.label22.TabIndex = 4;
