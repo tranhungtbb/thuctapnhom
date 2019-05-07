@@ -56,29 +56,37 @@ namespace QuanLiPhongTro.SQL
         public DataTable Execute_Query(string query, object[] para = null)
         {
             DataTable table = new DataTable();
-            using (connect = new SqlConnection(chuoiketnoi))
+            try
             {
-                Open();
-                commad = new SqlCommand(query, connect);
-                if (para != null)
+                using (connect = new SqlConnection(chuoiketnoi))
                 {
-                    string[] listPara = query.Split(' ');
-                    int i = 0;
-                    foreach (string iteam in listPara)
+                    Open();
+                    commad = new SqlCommand(query, connect);
+                    if (para != null)
                     {
-                        if (iteam.Contains('@'))
+                        string[] listPara = query.Split(' ');
+                        int i = 0;
+                        foreach (string iteam in listPara)
                         {
-                            commad.Parameters.AddWithValue(query, para[i]);
-                            i++;
+                            if (iteam.Contains('@'))
+                            {
+                                commad.Parameters.AddWithValue(query, para[i]);
+                                i++;
+                            }
                         }
                     }
+
+                    SqlDataAdapter daA = new SqlDataAdapter(commad);
+
+                    daA.Fill(table);
+                    Close();
                 }
-
-                SqlDataAdapter daA = new SqlDataAdapter(commad);
-
-                daA.Fill(table);
-                Close();
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Không có dữ liệu", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            
             return table;
         }
         public int Execute_NonQuery(string query, object[] para = null)

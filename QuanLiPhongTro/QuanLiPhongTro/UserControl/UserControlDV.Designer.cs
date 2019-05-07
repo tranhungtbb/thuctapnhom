@@ -48,7 +48,6 @@
             this.txt_Donvitinh = new System.Windows.Forms.TextBox();
             this.txt_DongiaDV = new System.Windows.Forms.TextBox();
             this.txt_Tendichvu = new System.Windows.Forms.TextBox();
-            this.txt_Madichvu = new System.Windows.Forms.TextBox();
             this.comb_MaKH_HĐ = new System.Windows.Forms.ComboBox();
             this.comb_Trangthai = new System.Windows.Forms.ComboBox();
             this.txt_Mahoadon = new System.Windows.Forms.TextBox();
@@ -69,7 +68,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView_DichVu = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -85,10 +84,11 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DichVu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -105,6 +105,7 @@
             this.btn_XoaDV.Size = new System.Drawing.Size(51, 39);
             this.btn_XoaDV.TabIndex = 267;
             this.btn_XoaDV.UseVisualStyleBackColor = false;
+            this.btn_XoaDV.Click += new System.EventHandler(this.btn_XoaDV_Click);
             // 
             // btn_CapnhapDV
             // 
@@ -118,6 +119,7 @@
             this.btn_CapnhapDV.Size = new System.Drawing.Size(51, 39);
             this.btn_CapnhapDV.TabIndex = 266;
             this.btn_CapnhapDV.UseVisualStyleBackColor = false;
+            this.btn_CapnhapDV.Click += new System.EventHandler(this.btn_CapnhapDV_Click);
             // 
             // btn_ThemDV
             // 
@@ -131,6 +133,7 @@
             this.btn_ThemDV.Size = new System.Drawing.Size(51, 39);
             this.btn_ThemDV.TabIndex = 265;
             this.btn_ThemDV.UseVisualStyleBackColor = false;
+            this.btn_ThemDV.Click += new System.EventHandler(this.btn_ThemDV_Click);
             // 
             // btn_XoaDV_ĐN
             // 
@@ -283,29 +286,22 @@
             // 
             this.txt_Donvitinh.Location = new System.Drawing.Point(779, 102);
             this.txt_Donvitinh.Name = "txt_Donvitinh";
-            this.txt_Donvitinh.Size = new System.Drawing.Size(133, 20);
+            this.txt_Donvitinh.Size = new System.Drawing.Size(123, 20);
             this.txt_Donvitinh.TabIndex = 251;
             // 
             // txt_DongiaDV
             // 
             this.txt_DongiaDV.Location = new System.Drawing.Point(779, 75);
             this.txt_DongiaDV.Name = "txt_DongiaDV";
-            this.txt_DongiaDV.Size = new System.Drawing.Size(133, 20);
+            this.txt_DongiaDV.Size = new System.Drawing.Size(123, 20);
             this.txt_DongiaDV.TabIndex = 250;
             // 
             // txt_Tendichvu
             // 
             this.txt_Tendichvu.Location = new System.Drawing.Point(779, 49);
             this.txt_Tendichvu.Name = "txt_Tendichvu";
-            this.txt_Tendichvu.Size = new System.Drawing.Size(133, 20);
+            this.txt_Tendichvu.Size = new System.Drawing.Size(123, 20);
             this.txt_Tendichvu.TabIndex = 249;
-            // 
-            // txt_Madichvu
-            // 
-            this.txt_Madichvu.Location = new System.Drawing.Point(779, 22);
-            this.txt_Madichvu.Name = "txt_Madichvu";
-            this.txt_Madichvu.Size = new System.Drawing.Size(133, 20);
-            this.txt_Madichvu.TabIndex = 248;
             // 
             // comb_MaKH_HĐ
             // 
@@ -496,14 +492,16 @@
             this.label10.TabIndex = 229;
             this.label10.Text = "Dịch vụ điện nước";
             // 
-            // dataGridView2
+            // dataGridView_DichVu
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(647, 134);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(339, 147);
-            this.dataGridView2.TabIndex = 228;
+            this.dataGridView_DichVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView_DichVu.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView_DichVu.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_DichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_DichVu.Location = new System.Drawing.Point(647, 134);
+            this.dataGridView_DichVu.Name = "dataGridView_DichVu";
+            this.dataGridView_DichVu.Size = new System.Drawing.Size(339, 147);
+            this.dataGridView_DichVu.TabIndex = 228;
             // 
             // label2
             // 
@@ -651,10 +649,20 @@
             this.label19.TabIndex = 5;
             this.label19.Text = "@2019 Quản lí phòng trọ, HVKTQS";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(779, 22);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(123, 21);
+            this.comboBox1.TabIndex = 268;
+            // 
             // UserControlDV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btn_XoaDV);
             this.Controls.Add(this.btn_CapnhapDV);
             this.Controls.Add(this.btn_ThemDV);
@@ -674,7 +682,6 @@
             this.Controls.Add(this.txt_Donvitinh);
             this.Controls.Add(this.txt_DongiaDV);
             this.Controls.Add(this.txt_Tendichvu);
-            this.Controls.Add(this.txt_Madichvu);
             this.Controls.Add(this.comb_MaKH_HĐ);
             this.Controls.Add(this.comb_Trangthai);
             this.Controls.Add(this.txt_Mahoadon);
@@ -695,7 +702,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView_DichVu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label8);
@@ -715,7 +722,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DichVu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -745,7 +752,6 @@
         private System.Windows.Forms.TextBox txt_Donvitinh;
         private System.Windows.Forms.TextBox txt_DongiaDV;
         private System.Windows.Forms.TextBox txt_Tendichvu;
-        private System.Windows.Forms.TextBox txt_Madichvu;
         private System.Windows.Forms.ComboBox comb_MaKH_HĐ;
         private System.Windows.Forms.ComboBox comb_Trangthai;
         private System.Windows.Forms.TextBox txt_Mahoadon;
@@ -766,7 +772,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView_DichVu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
@@ -782,5 +788,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

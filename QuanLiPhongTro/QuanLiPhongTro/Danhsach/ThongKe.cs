@@ -69,6 +69,21 @@ namespace QuanLiPhongTro.Danhsach
             return list;
         }
 
+        public List<DichVu> ListDichVu()
+        {
+            List<DichVu> list = new List<DichVu>();
+            string query = "select * from DichVu";
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                DichVu tktb = new DichVu(i);
+                list.Add(tktb);
+            }
+            return list;
+        }
+
         public List<ThietBi> ListThietBiofPhong(string maphong)
         {
             List<ThietBi> list = new List<ThietBi>();

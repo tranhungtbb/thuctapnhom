@@ -484,8 +484,8 @@ namespace QuanLiPhongTro
         {
             listView1.Items.Clear();
 
-            List<QuanLiPhongTro.DTO.ThietBi> listPT = Danhsach.ThongKe.Instance.ListThietBiofPhong(maphong);
-            foreach (QuanLiPhongTro.DTO.ThietBi i in listPT)
+            List<ThietBi> listPT = Danhsach.ThongKe.Instance.ListThietBiofPhong(maphong);
+            foreach (ThietBi i in listPT)
             {
                 ListViewItem lvItem = new ListViewItem(i.MATHIETBI.ToString());
                 lvItem.SubItems.Add(i.TENTHIETBI.ToString());
