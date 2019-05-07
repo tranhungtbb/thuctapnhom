@@ -99,5 +99,7 @@ namespace QuanLiPhongTro.Forms
             panelControl.Controls.Add(trogiup);
             trogiup.Dock = DockStyle.Fill;
         }
+
+        
     }
 }

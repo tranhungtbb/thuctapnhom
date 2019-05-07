@@ -500,5 +500,10 @@ namespace QuanLiPhongTro
             string ma = Comb_IDphong_TB.Text;
             ShowListView_TTThietBiofPhong(ma);
         }
+
+        private void Comb_IDphong_TB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
