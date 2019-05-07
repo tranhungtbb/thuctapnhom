@@ -28,8 +28,7 @@ namespace QuanLiPhongTro.Danhsach
             List<PhongTrong> list = new List<PhongTrong>();
             string query = "ListPhongTrong";
             DataTable table = new DataTable();
-            string query = "ListPhongTrong";
-            table = SQL.ThuVienSQL.instance.Execute_Query(query);
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
 
             foreach (DataRow i in table.Rows)
             {
