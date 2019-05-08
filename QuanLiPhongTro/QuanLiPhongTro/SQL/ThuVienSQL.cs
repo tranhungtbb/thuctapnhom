@@ -85,8 +85,8 @@ namespace QuanLiPhongTro.SQL
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message, "Không có dữ liệu", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                
             }
-            
             return table;
         }
         public int Execute_NonQuery(string query, object[] para = null)
