@@ -17,14 +17,25 @@ namespace QuanLiPhongTro
         public UserControlDV()
         {
             InitializeComponent();
-            LoadList_Data_DichVu();
+            LoatData();
             LoatData_ComboboxIDDichVu();
+        }
+        void LoatData()
+        {
+            LoadList_Data_DichVu();
+            LoadList_Data_HoaDon();
         }
         void LoadList_Data_DichVu()
         {
             string query = "select MaDichVu as 'Mã Dịch Vụ', TenDichVu as 'Tên dịch vụ' , DonGia as 'Đơn giá', DVT as 'Đơn vị tính'  from DichVu";
             dataGridView_DichVu.DataSource = SQL.ThuVienSQL.Instance.Execute_Query(query);
         }
+        void LoadList_Data_HoaDon()
+        {
+            string query = "select MaHoaDon as 'Mã Hóa Đơn', Ngaylap as 'Ngày Lập' , TongTien as 'Tổng tiền', MakhachHang as 'Mã khách hàng'  from HoaDon";
+            dataGridView_HoaDon.DataSource = SQL.ThuVienSQL.Instance.Execute_Query(query);
+        }
+
 
         void LoatData_ComboboxIDDichVu()
         {
@@ -138,6 +149,18 @@ namespace QuanLiPhongTro
             {
                 MessageBox.Show(ex.Message, "Xóa không thành công.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
+
+        private void btn_ThemHĐ_Click(object sender, EventArgs e)
+        {
+            string ma = txt_Mahoadon.ToString();
+            DateTime ngay = dateTimePicker1.Value;
+
+        }
+
+        private void btn_CapnhapHĐ_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace QuanLiPhongTro.DAO
 {
-    public class LoaiPhong
+    public class LoaiPhongDAO
     {
-        private static LoaiPhong instance;
+        private static LoaiPhongDAO instance;
 
-        public static LoaiPhong Instance
+        public static LoaiPhongDAO Instance
         {
             get
             {
-                if (instance == null) instance = new LoaiPhong();
-                return LoaiPhong.instance;
+                if (instance == null) instance = new LoaiPhongDAO();
+                return LoaiPhongDAO.instance;
             }
-            private set { LoaiPhong.instance = value; }
+            private set { LoaiPhongDAO.instance = value; }
         }
-        public LoaiPhong() { }
+        public LoaiPhongDAO() { }
 
         public bool insertLoaiPhong(int ma, string ten, int dt, string mota, int dongia, int sl)
         {

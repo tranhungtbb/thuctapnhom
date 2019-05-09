@@ -131,7 +131,7 @@ namespace QuanLiPhongTro
                 int dientich = (int)Convert.ToDouble(dt);
                 int dongia = (int)Convert.ToDouble(dg);
                 int soluong = (int)Convert.ToDouble(sl);
-                if (DAO.LoaiPhong.Instance.insertLoaiPhong(malp, tenlp, dientich, mota,dongia,soluong))
+                if (DAO.LoaiPhongDAO.Instance.insertLoaiPhong(malp, tenlp, dientich, mota,dongia,soluong))
                 {
                     MessageBox.Show("Thêm loại phòng thành công.", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadList_Data_LoaiPhong();
@@ -158,7 +158,7 @@ namespace QuanLiPhongTro
                 int dongia = (int)Convert.ToDouble(dg);
                 int soluong = (int)Convert.ToDouble(sl);
                 int matb = (int)Convert.ToDouble(ma);
-                if (DAO.LoaiPhong.Instance.updateLoaiPhong(malp, tenlp, dientich, mota, dongia, soluong))
+                if (DAO.LoaiPhongDAO.Instance.updateLoaiPhong(malp, tenlp, dientich, mota, dongia, soluong))
                 {
                     MessageBox.Show("Cập nhập thành công.", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadList_Data_LoaiPhong();
@@ -180,7 +180,7 @@ namespace QuanLiPhongTro
             try
             {
                 int malp = (int)Convert.ToDouble(ma);
-                if (DAO.LoaiPhong.Instance.deleteLoaiPhong(malp))
+                if (DAO.LoaiPhongDAO.Instance.deleteLoaiPhong(malp))
                 {
                     MessageBox.Show("Xóa loại phòng thành công.", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadList_Data_LoaiPhong();

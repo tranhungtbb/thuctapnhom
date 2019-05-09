@@ -17,16 +17,18 @@ namespace QuanLiPhongTro.Forms
             InitializeComponent();
         }
 
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
-        {
-            Menu menu = new Menu();
-            this.Show();
-            menu.ShowDialog();
-        }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            this.Show();
+            menu.ShowDialog();
         }
     }
 }
