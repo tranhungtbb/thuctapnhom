@@ -44,6 +44,8 @@ namespace QuanLiPhongTro.DAO
             i = SQL.ThuVienSQL.Instance.Execute_NonQuery(query);
             return i > 0;
         }
+        
+        //tim kiem khach hang
         public DataTable searchKhachHang(string ten)
         {
             DataTable table = new DataTable();
