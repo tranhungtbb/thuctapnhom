@@ -459,7 +459,7 @@ namespace QuanLiPhongTro
             {
                 d.Cells[1].Style.ForeColor = Color.Red;
             }
-        }
+        }// aaaaaaaaaa
 
         void ComboData()
         {
