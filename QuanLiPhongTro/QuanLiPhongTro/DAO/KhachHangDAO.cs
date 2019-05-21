@@ -36,6 +36,7 @@ namespace QuanLiPhongTro.DAO
             i = SQL.ThuVienSQL.Instance.Execute_NonQuery(query);
             return i > 0;
         }
+        // xoa khach hang
         public bool deleteKhachHang(int ma)
         {
             int i = 0;
