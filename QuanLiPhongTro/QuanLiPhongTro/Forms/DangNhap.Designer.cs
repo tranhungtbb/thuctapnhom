@@ -38,8 +38,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_tendangnhap = new System.Windows.Forms.TextBox();
+            this.txt_matkhau = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -87,7 +87,7 @@
             this.label1.Font = new System.Drawing.Font("Cooper Black", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(69, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 54);
+            this.label1.Size = new System.Drawing.Size(196, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "ăng Nhập";
             // 
@@ -98,7 +98,7 @@
             this.label4.ForeColor = System.Drawing.Color.DimGray;
             this.label4.Location = new System.Drawing.Point(158, 83);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(322, 39);
+            this.label4.Size = new System.Drawing.Size(257, 31);
             this.label4.TabIndex = 4;
             this.label4.Text = "Please Login First";
             // 
@@ -109,7 +109,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.label2.Location = new System.Drawing.Point(160, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 29);
+            this.label2.Size = new System.Drawing.Size(105, 24);
             this.label2.TabIndex = 10;
             this.label2.Text = "User Name";
             // 
@@ -120,7 +120,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.label5.Location = new System.Drawing.Point(160, 195);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 29);
+            this.label5.Size = new System.Drawing.Size(96, 24);
             this.label5.TabIndex = 11;
             this.label5.Text = "PassWord";
             // 
@@ -140,23 +140,26 @@
             this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(349, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(233, 17);
+            this.label22.Size = new System.Drawing.Size(178, 13);
             this.label22.TabIndex = 4;
             this.label22.Text = "@2019 Quản lí phòng trọ, HVKTQS";
             // 
-            // textBox1
+            // txt_tendangnhap
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 170);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 22);
-            this.textBox1.TabIndex = 30;
+            this.txt_tendangnhap.Location = new System.Drawing.Point(165, 170);
+            this.txt_tendangnhap.Name = "txt_tendangnhap";
+            this.txt_tendangnhap.Size = new System.Drawing.Size(244, 20);
+            this.txt_tendangnhap.TabIndex = 30;
+            this.txt_tendangnhap.Text = "tranhungtbb";
             // 
-            // textBox2
+            // txt_matkhau
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 227);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(244, 22);
-            this.textBox2.TabIndex = 40;
+            this.txt_matkhau.Location = new System.Drawing.Point(165, 227);
+            this.txt_matkhau.Name = "txt_matkhau";
+            this.txt_matkhau.Size = new System.Drawing.Size(244, 20);
+            this.txt_matkhau.TabIndex = 40;
+            this.txt_matkhau.Text = "Hung11031998123";
+            this.txt_matkhau.UseSystemPasswordChar = true;
             // 
             // button1
             // 
@@ -177,8 +180,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(585, 345);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_matkhau);
+            this.Controls.Add(this.txt_tendangnhap);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -210,8 +213,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_tendangnhap;
+        private System.Windows.Forms.TextBox txt_matkhau;
         private System.Windows.Forms.Button button1;
     }
 }

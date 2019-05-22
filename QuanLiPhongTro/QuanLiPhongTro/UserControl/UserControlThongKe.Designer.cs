@@ -42,6 +42,17 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.listView2 = new System.Windows.Forms.ListView();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label4 = new System.Windows.Forms.Label();
+            this.sl = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +78,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Menu;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.panel1.Location = new System.Drawing.Point(0, 237);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(998, 10);
@@ -78,18 +89,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.label1.Location = new System.Drawing.Point(71, 29);
+            this.label1.Location = new System.Drawing.Point(71, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(295, 24);
+            this.label1.Size = new System.Drawing.Size(366, 24);
             this.label1.TabIndex = 47;
-            this.label1.Text = "Danh sách  hợp đồng hiện tại";
+            this.label1.Text = "Thống kê số lượng người theo phòng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.label2.Location = new System.Drawing.Point(71, 250);
+            this.label2.Location = new System.Drawing.Point(71, 284);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(310, 24);
             this.label2.TabIndex = 48;
@@ -98,15 +109,28 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(384, 253);
+            this.comboBox1.Location = new System.Drawing.Point(384, 284);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(73, 21);
+            this.comboBox1.Size = new System.Drawing.Size(53, 21);
             this.comboBox1.TabIndex = 49;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(561, 253);
+            this.comboBox2.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.comboBox2.Location = new System.Drawing.Point(561, 284);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(42, 21);
             this.comboBox2.TabIndex = 50;
@@ -116,7 +140,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
-            this.label3.Location = new System.Drawing.Point(481, 253);
+            this.label3.Location = new System.Drawing.Point(481, 284);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 24);
             this.label3.TabIndex = 51;
@@ -124,10 +148,18 @@
             // 
             // listView1
             // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7});
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(75, 68);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(751, 163);
+            this.listView1.Size = new System.Drawing.Size(751, 130);
             this.listView1.TabIndex = 52;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -140,6 +172,7 @@
             this.button1.TabIndex = 54;
             this.button1.Text = "Xem";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -152,7 +185,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(646, 253);
+            this.button3.Location = new System.Drawing.Point(646, 284);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(79, 23);
             this.button3.TabIndex = 56;
@@ -161,7 +194,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(731, 253);
+            this.button4.Location = new System.Drawing.Point(731, 284);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 57;
@@ -171,18 +204,92 @@
             // listView2
             // 
             this.listView2.GridLines = true;
-            this.listView2.Location = new System.Drawing.Point(75, 282);
+            this.listView2.Location = new System.Drawing.Point(75, 316);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(731, 163);
+            this.listView2.Size = new System.Drawing.Size(751, 185);
             this.listView2.TabIndex = 58;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(443, 39);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(51, 21);
+            this.comboBox3.TabIndex = 59;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Mã khách hàng";
+            this.columnHeader1.Width = 94;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tên khách hàng";
+            this.columnHeader2.Width = 129;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Ngày sinh";
+            this.columnHeader3.Width = 81;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Giới tính";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Quê quán";
+            this.columnHeader5.Width = 83;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "SDT";
+            this.columnHeader6.Width = 136;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "SCMND";
+            this.columnHeader7.Width = 161;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(583, 215);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(165, 13);
+            this.label4.TabIndex = 60;
+            this.label4.Text = "Số lượng người tối đa của phòng:";
+            // 
+            // sl
+            // 
+            this.sl.AutoSize = true;
+            this.sl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sl.Location = new System.Drawing.Point(754, 213);
+            this.sl.Name = "sl";
+            this.sl.Size = new System.Drawing.Size(23, 15);
+            this.sl.TabIndex = 61;
+            this.sl.Text = "00";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(783, 215);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 13);
+            this.label6.TabIndex = 62;
+            this.label6.Text = "người";
             // 
             // UserControlThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.sl);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -221,5 +328,16 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label sl;
+        private System.Windows.Forms.Label label6;
     }
 }

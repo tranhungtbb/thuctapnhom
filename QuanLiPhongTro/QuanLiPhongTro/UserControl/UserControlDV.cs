@@ -27,12 +27,12 @@ namespace QuanLiPhongTro
         }
         void LoadList_Data_DichVu()
         {
-            string query = "select MaDichVu as 'Mã Dịch Vụ', TenDichVu as 'Tên dịch vụ' , DonGia as 'Đơn giá', DVT as 'Đơn vị tính'  from DichVu";
+            string query = "select MaDichVu as 'Mã Dịch Vụ', TenDichVu as 'Tên dịch vụ' , PARSENAME(convert(varchar,convert(money,DonGia),1),2) as 'Đơn giá', DVT as 'Đơn vị tính'  from DichVu";
             dataGridView_DichVu.DataSource = SQL.ThuVienSQL.Instance.Execute_Query(query);
         }
         void LoadList_Data_HoaDon()
         {
-            string query = "select MaHoaDon as 'Mã Hóa Đơn', Ngaylap as 'Ngày Lập' , TongTien as 'Tổng tiền', MakhachHang as 'Mã khách hàng'  from HoaDon";
+            string query = "select MaHoaDon as 'Mã Hóa Đơn', Ngaylap as 'Ngày Lập' , PARSENAME(convert(varchar,convert(money,TongTien),1),2) as 'Tổng tiền', MakhachHang as 'Mã khách hàng'  from HoaDon";
             dataGridView_HoaDon.DataSource = SQL.ThuVienSQL.Instance.Execute_Query(query);
         }
 

@@ -132,7 +132,7 @@
             this.listView_Phongtrong.GridLines = true;
             this.listView_Phongtrong.Location = new System.Drawing.Point(33, 193);
             this.listView_Phongtrong.Name = "listView_Phongtrong";
-            this.listView_Phongtrong.Size = new System.Drawing.Size(766, 146);
+            this.listView_Phongtrong.Size = new System.Drawing.Size(792, 146);
             this.listView_Phongtrong.TabIndex = 2;
             this.listView_Phongtrong.UseCompatibleStateImageBehavior = false;
             this.listView_Phongtrong.View = System.Windows.Forms.View.Details;
@@ -155,6 +155,7 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "Đơn giá";
+            this.columnHeader4.Width = 94;
             // 
             // columnHeader5
             // 

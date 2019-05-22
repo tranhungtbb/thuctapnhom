@@ -26,9 +26,32 @@ namespace QuanLiPhongTro.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
-            this.Show();
-            menu.ShowDialog();
+            //Menu menu = new Menu();
+            //this.Show();
+            //menu.ShowDialog();
+            string tendangnhap = txt_tendangnhap.Text;
+            string mk = txt_matkhau.Text;
+
+            if (txt_tendangnhap.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập tên đăng nhập!");
+            }
+            else if (txt_matkhau.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn chưa nhập mật khẩu!");
+
+            }
+            else if (DAO.DangNhapDAO.Instance.DangNhap(tendangnhap, mk))
+            {
+                Menu m = new Menu();
+                this.Hide();
+                m.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Tên hoặc mật khẩu sai. Mời nhập lại.");
+            }
         }
     }
 }

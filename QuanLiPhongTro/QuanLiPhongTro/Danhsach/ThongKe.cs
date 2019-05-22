@@ -52,6 +52,53 @@ namespace QuanLiPhongTro.Danhsach
             }
             return list;
         }
+        public List<Phong> ListPhongChuaĐuNguoi()
+        {
+            List<Phong> list = new List<Phong>();
+            string query = "PhongChuaDuNguoi";
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                Phong tkhd = new Phong(i);
+                list.Add(tkhd);
+            }
+            return list;
+        }
+        public List<Phong> ListPhongChuaLamHopDong()
+        {
+            List<Phong> list = new List<Phong>();
+            string query = "ListPhongChuaLamHopDong";
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                Phong tkhd = new Phong(i);
+                list.Add(tkhd);
+            }
+            return list;
+        }
+
+
+        //ListKhachHangChuaLamHopDong
+        public List<KhachHang> ListKhachHangChuaLamHopDong()
+        {
+            List<KhachHang> list = new List<KhachHang>();
+            string query = "ListKhachHangChuaLamHopDong";
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                KhachHang tkhd = new KhachHang(i);
+                list.Add(tkhd);
+            }
+            return list;
+        }
+
+
 
         public List<ThietBi> ListThietbi()
         {
@@ -96,6 +143,26 @@ namespace QuanLiPhongTro.Danhsach
                 list.Add(tktb);
             }
             return list;
+        }
+        public List<KhachHang> ListKhachHangofPhong(string maphong)
+        {
+            List<KhachHang> list = new List<KhachHang>();
+            string query = string.Format("ListKhachHangOfPhong '{0}'", maphong);
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                KhachHang tktb = new KhachHang(i);
+                list.Add(tktb);
+            }
+            return list;
+        }
+        public DataTable SoLuongNguoiToiDaOfPhong(string ma)
+        {
+            string query = string.Format("dbo.SoLuongNguoiToiDa'{0}'", ma);
+            DataTable a = SQL.ThuVienSQL.Instance.Execute_Query(query);
+            return a;
         }
     }
 }

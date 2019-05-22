@@ -29,7 +29,7 @@ namespace QuanLiPhongTro
         
         void LoadList_Data_LoaiPhong()
         {
-            string query = "select MaLoaiPhong as 'Mã loại phòng', TenLoaiPhong as 'Tên loại phòng', DienTich as 'Diện tích',MoTa as 'Mô Tả', DonGia as 'Đơn giá', SoLuongToiDa as N'Số lượng tối đa' from LoaiPhong";
+            string query = "select MaLoaiPhong as 'Mã loại phòng', TenLoaiPhong as 'Tên loại phòng', DienTich as 'Diện tích',MoTa as 'Mô Tả', PARSENAME(convert(varchar,convert(money,DonGia),1),2) as 'Đơn giá', SoLuongToiDa as N'Số lượng tối đa' from LoaiPhong";
             dataGridView_LoaiPhong.DataSource = SQL.ThuVienSQL.Instance.Execute_Query(query);
         }
         #endregion

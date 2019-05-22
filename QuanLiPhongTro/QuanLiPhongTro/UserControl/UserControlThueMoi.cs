@@ -18,6 +18,7 @@ namespace QuanLiPhongTro
             InitializeComponent();
             LoatList();
             ComboData();
+            
 
         }
         void LoatList()
@@ -32,7 +33,7 @@ namespace QuanLiPhongTro
         }
         void LoadList_Data_HopDong()
         {
-            string query = "select MaHopDong as 'Mã hợp đồng', NgayBatDau as 'Ngày bắt đầu',  ThoiGianThue as 'Thời gian', TienCoc as 'Tiền cọc' , GhiChu as 'Ghi chú', MaPhong as 'Mã phòng', MaKhachHang as 'Mã KH' from HopDong";
+            string query = "select MaHopDong as 'Mã hợp đồng', NgayBatDau as 'Ngày bắt đầu',  ThoiGianThue as 'Thời gian', PARSENAME(convert(varchar,convert(money,TienCoc),1),2) as 'Tiền cọc' , GhiChu as 'Ghi chú', MaPhong as 'Mã phòng', MaKhachHang as 'Mã KH' from HopDong";
             dataGridViewHĐ.DataSource = SQL.ThuVienSQL.Instance.Execute_Query(query);
         }
 
@@ -93,28 +94,7 @@ namespace QuanLiPhongTro
             }
 
             int stt = 0;
-            if (txt_CMND.Text.Length == 0)
-            {
-                try
-                {
-                    stt = (int)Convert.ToDouble(Comb_stt.Text);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Chưa nhập stt.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                try
-                {
-                    stt = (int)Convert.ToDouble(Comb_stt.Text);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Nhập stt chưa đúng định dạng.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            
 
             string maphong = Comb_MaPhong.Text;
 
@@ -190,28 +170,7 @@ namespace QuanLiPhongTro
             }
 
             int stt = 0;
-            if (Comb_stt.Text.Length == 0)
-            {
-                try
-                {
-                    stt = (int)Convert.ToDouble(Comb_stt.Text);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Chưa nhập stt.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                try
-                {
-                    stt = (int)Convert.ToDouble(Comb_stt.Text);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Nhập stt đúng định dạng.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            
 
             string maphong = Comb_MaPhong.Text;
 
@@ -463,11 +422,13 @@ namespace QuanLiPhongTro
 
         void ComboData()
         {
-            List_Combobox_IDKH_TT();
+            List_Combobox_IDPhong_TT();
             List_Combobox_IDPhong_HĐ();
+            List_Combobox_IDKH_HĐ();
+
         }
 
-        public void List_Combobox_IDKH_TT()
+        public void List_Combobox_IDPhong_TT()
         {
             List<Phong> list = Danhsach.ThongKe.Instance.ListPhong();
             Comb_IDphong_TB.DataSource = list;
@@ -475,9 +436,28 @@ namespace QuanLiPhongTro
         }
         public void List_Combobox_IDPhong_HĐ()
         {
-            List<PhongTrong> list = Danhsach.ThongKe.Instance.ListPTr();
+            List<Phong> list = Danhsach.ThongKe.Instance.ListPhongChuaLamHopDong();
             Comb_IDMaPhong_HD.DataSource = list;
             Comb_IDMaPhong_HD.DisplayMember = "MAPHONG";
+        }
+        
+        public void List_Combobox_IDKH_HĐ()
+        {
+            List<KhachHang> list = Danhsach.ThongKe.Instance.ListKhachHangChuaLamHopDong();
+            Comb_IDkhachhang_HD.DataSource = list;
+            Comb_IDkhachhang_HD.DisplayMember = "MaKhachHang";
+        }
+        public void List_Combobox_IDPhongTrong()
+        {
+            List<PhongTrong> list = Danhsach.ThongKe.Instance.ListPTr();
+            Comb_MaPhong.DataSource = list;
+            Comb_MaPhong.DisplayMember = "MaPhong";
+        }
+        public void List_Combobox_IDPhongThemKH()
+        {
+            List<Phong> list = Danhsach.ThongKe.Instance.ListPhongChuaĐuNguoi();
+            Comb_MaPhong.DataSource = list;
+            Comb_MaPhong.DisplayMember = "MaPhong";
         }
 
         public void ShowListView_TTThietBiofPhong(string maphong)
@@ -501,9 +481,23 @@ namespace QuanLiPhongTro
             ShowListView_TTThietBiofPhong(ma);
         }
 
-        private void Comb_IDphong_TB_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox1.Checked == true)
+            {
+                List_Combobox_IDPhongTrong();
+            }
+            else
+            {
+                List_Combobox_IDPhongThemKH();
+            }
+        }
 
+        private void btn_Loc_Click(object sender, EventArgs e)
+        {
+            string query = "ListHopDongSapHetHan";
+            dataGridViewHĐ.ClearSelection();
+            dataGridViewHĐ.DataSource = SQL.ThuVienSQL.Instance.Execute_Query(query);
         }
     }
 }

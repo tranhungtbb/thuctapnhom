@@ -52,13 +52,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Danhsach\ThongKe.cs" />
+    <Compile Include="DAO\DangNhapDAO.cs" />
     <Compile Include="DAO\DichVuDAO.cs" />
+    <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\HopDongDAO.cs" />
     <Compile Include="DAO\KhachHangDAO.cs" />
     <Compile Include="DAO\LoaiPhongDAO.cs" />
     <Compile Include="DAO\ThietBiDAO.cs" />
     <Compile Include="DAO\TrangBiDAO.cs" />
     <Compile Include="DTO\DichVu.cs" />
+    <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\Phong.cs" />
     <Compile Include="DTO\PhongTrong.cs" />
     <Compile Include="DTO\ThietBi.cs" />
