@@ -26,9 +26,7 @@ namespace QuanLiPhongTro.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Menu menu = new Menu();
-            //this.Show();
-            //menu.ShowDialog();
+            
             string tendangnhap = txt_tendangnhap.Text;
             string mk = txt_matkhau.Text;
 
@@ -52,6 +50,7 @@ namespace QuanLiPhongTro.Forms
             {
                 MessageBox.Show("Tên hoặc mật khẩu sai. Mời nhập lại.");
             }
+            
         }
     }
 }

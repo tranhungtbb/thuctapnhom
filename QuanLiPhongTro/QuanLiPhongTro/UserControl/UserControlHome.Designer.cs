@@ -65,17 +65,19 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(997, 156);
+            this.panel1.Size = new System.Drawing.Size(1329, 192);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(907, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(1209, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 72);
+            this.pictureBox1.Size = new System.Drawing.Size(116, 89);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -84,9 +86,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(30, 50);
+            this.label2.Location = new System.Drawing.Point(40, 62);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(432, 102);
+            this.label2.Size = new System.Drawing.Size(545, 132);
             this.label2.TabIndex = 1;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -95,17 +98,22 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 20.25F);
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(27, 4);
+            this.label1.Location = new System.Drawing.Point(36, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(259, 31);
+            this.label1.Size = new System.Drawing.Size(325, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thông tin nội quy";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(541, 167);
+            this.dateTimePicker1.Checked = false;
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(721, 206);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(122, 22);
             this.dateTimePicker1.TabIndex = 1;
             // 
             // label3
@@ -113,9 +121,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cooper Black", 20.25F);
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(27, 159);
+            this.label3.Location = new System.Drawing.Point(36, 196);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(325, 31);
+            this.label3.Size = new System.Drawing.Size(410, 39);
             this.label3.TabIndex = 1;
             this.label3.Text = "Thông tin phòng trống";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -130,9 +139,10 @@
             this.columnHeader5,
             this.columnHeader6});
             this.listView_Phongtrong.GridLines = true;
-            this.listView_Phongtrong.Location = new System.Drawing.Point(33, 193);
+            this.listView_Phongtrong.Location = new System.Drawing.Point(44, 238);
+            this.listView_Phongtrong.Margin = new System.Windows.Forms.Padding(4);
             this.listView_Phongtrong.Name = "listView_Phongtrong";
-            this.listView_Phongtrong.Size = new System.Drawing.Size(792, 146);
+            this.listView_Phongtrong.Size = new System.Drawing.Size(1055, 179);
             this.listView_Phongtrong.TabIndex = 2;
             this.listView_Phongtrong.UseCompatibleStateImageBehavior = false;
             this.listView_Phongtrong.View = System.Windows.Forms.View.Details;
@@ -170,9 +180,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(44, 345);
+            this.pictureBox2.Location = new System.Drawing.Point(59, 425);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(231, 154);
+            this.pictureBox2.Size = new System.Drawing.Size(308, 190);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -180,9 +191,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(281, 345);
+            this.pictureBox3.Location = new System.Drawing.Point(375, 425);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(231, 154);
+            this.pictureBox3.Size = new System.Drawing.Size(308, 190);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -190,9 +202,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(518, 345);
+            this.pictureBox4.Location = new System.Drawing.Point(691, 425);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(231, 154);
+            this.pictureBox4.Size = new System.Drawing.Size(308, 190);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
@@ -200,9 +213,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(755, 345);
+            this.pictureBox5.Location = new System.Drawing.Point(1007, 425);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(231, 154);
+            this.pictureBox5.Size = new System.Drawing.Size(308, 190);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 6;
             this.pictureBox5.TabStop = false;
@@ -212,9 +226,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cooper Black", 20.25F);
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(831, 308);
+            this.label4.Location = new System.Drawing.Point(1108, 379);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 31);
+            this.label4.Size = new System.Drawing.Size(189, 39);
             this.label4.TabIndex = 7;
             this.label4.Text = "Demo ảnh";
             // 
@@ -223,24 +238,26 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.panel3.Controls.Add(this.label22);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 507);
+            this.panel3.Location = new System.Drawing.Point(0, 624);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(997, 21);
+            this.panel3.Size = new System.Drawing.Size(1329, 26);
             this.panel3.TabIndex = 27;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(791, 3);
+            this.label22.Location = new System.Drawing.Point(1055, 4);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(178, 13);
+            this.label22.Size = new System.Drawing.Size(233, 17);
             this.label22.TabIndex = 4;
             this.label22.Text = "@2019 Quản lí phòng trọ, HVKTQS";
             // 
             // UserControlHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel3);
@@ -253,8 +270,9 @@
             this.Controls.Add(this.listView_Phongtrong);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControlHome";
-            this.Size = new System.Drawing.Size(997, 528);
+            this.Size = new System.Drawing.Size(1329, 650);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

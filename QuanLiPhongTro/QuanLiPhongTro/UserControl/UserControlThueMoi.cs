@@ -424,7 +424,6 @@ namespace QuanLiPhongTro
         {
             List_Combobox_IDPhong_TT();
             List_Combobox_IDPhong_HĐ();
-            List_Combobox_IDKH_HĐ();
 
         }
 
@@ -441,9 +440,9 @@ namespace QuanLiPhongTro
             Comb_IDMaPhong_HD.DisplayMember = "MAPHONG";
         }
         
-        public void List_Combobox_IDKH_HĐ()
+        public void List_Combobox_IDKH_HĐ(string ma)
         {
-            List<KhachHang> list = Danhsach.ThongKe.Instance.ListKhachHangChuaLamHopDong();
+            List<KhachHang> list = Danhsach.ThongKe.Instance.ListKhachHangChuaLamHopDong(ma);
             Comb_IDkhachhang_HD.DataSource = list;
             Comb_IDkhachhang_HD.DisplayMember = "MaKhachHang";
         }
@@ -498,6 +497,12 @@ namespace QuanLiPhongTro
             string query = "ListHopDongSapHetHan";
             dataGridViewHĐ.ClearSelection();
             dataGridViewHĐ.DataSource = SQL.ThuVienSQL.Instance.Execute_Query(query);
+        }
+
+        private void Comb_IDMaPhong_HD_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string ma = Comb_IDMaPhong_HD.Text;
+            List_Combobox_IDKH_HĐ(ma);
         }
     }
 }

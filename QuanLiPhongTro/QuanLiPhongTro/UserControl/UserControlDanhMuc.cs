@@ -203,7 +203,7 @@ namespace QuanLiPhongTro
         private void btn_ThemTrangBi_Click(object sender, EventArgs e)
         {
             string maphong = comb_IDPhong.Text;
-            string matb = comb_IDThietbi.Text;
+            string matb = comb_IDThietbi.SelectedValue.ToString();
             string sl = comb_Sl.Text;
             try
             {
@@ -212,6 +212,8 @@ namespace QuanLiPhongTro
                 if (DAO.TrangBiDAO.Instance.insertTrangBi(maphong,matbi,soluong))
                 {
                     MessageBox.Show("Thêm thiết bị thành công.", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                    ShowListView_TTThietBiofPhong(maphong);
                 }
             }
             catch (Exception ex)
@@ -224,7 +226,7 @@ namespace QuanLiPhongTro
         private void btn_UpdateTrangBi_Click(object sender, EventArgs e)
         {
             string maphong = comb_IDPhong.Text;
-            string matb = comb_IDThietbi.Text;
+            string matb = comb_IDThietbi.SelectedValue.ToString();
             string sl = comb_Sl.Text;
             try
             {
@@ -234,6 +236,7 @@ namespace QuanLiPhongTro
                 {
                     MessageBox.Show("Cập nhập thiết bị thành công.", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     
+                    ShowListView_TTThietBiofPhong(maphong);
                 }
             }
             catch (Exception ex)
@@ -245,14 +248,15 @@ namespace QuanLiPhongTro
         private void btn_XoaTrangBi_Click(object sender, EventArgs e)
         {
             string maphong = comb_IDPhong.Text;
-            string matb = comb_IDThietbi.Text;
+            string matb = comb_IDThietbi.SelectedValue.ToString();
             try
             {
                 int matbi = (int)Convert.ToDouble(matb);
                 if (DAO.TrangBiDAO.Instance.deleteTrangBi(maphong, matbi))
                 {
                     MessageBox.Show("Xóa thiết bị thành công.", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    
+                    ShowListView_TTThietBiofPhong(maphong);
                 }
             }
             catch (Exception ex)
@@ -282,7 +286,8 @@ namespace QuanLiPhongTro
         {
             List<ThietBi> list = Danhsach.ThongKe.Instance.ListThietbi();
             comb_IDThietbi.DataSource = list;
-            comb_IDThietbi.DisplayMember = "MaThietBi";
+            comb_IDThietbi.ValueMember = "MaThietBi";
+            comb_IDThietbi.DisplayMember = "TenThietBi";
         }
 
         public void ShowListView_TTThietBiofPhong(string maphong)

@@ -31,14 +31,14 @@ namespace QuanLiPhongTro.DAO
         public bool updateTrangBi(string maphong, int matb, int sl)
         {
             int i = 0;
-            string query = string.Format("update ThietBi set Soluong = '{0}' where MaPhong = '{1}' and MaThietBi = '{2}'", sl,maphong,matb);
+            string query = string.Format("update TrangBi set Soluong = '{0}' where MaPhong = '{1}' and MaThietBi = '{2}'", sl,maphong,matb);
             i = SQL.ThuVienSQL.Instance.Execute_NonQuery(query);
             return i > 0;
         }
         public bool deleteTrangBi(string maphong, int matb)
         {
             int i = 0;
-            string query = string.Format("delete ThietBi where MaPhong ='{0} and MaThietBi ='{1}'", maphong,matb);
+            string query = string.Format("delete TrangBi where MaPhong ='{0}' and MaThietBi ='{1}'", maphong,matb);
             i = SQL.ThuVienSQL.Instance.Execute_NonQuery(query);
             return i > 0;
         }

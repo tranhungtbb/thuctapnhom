@@ -55,7 +55,7 @@ namespace QuanLiPhongTro.Danhsach
         public List<Phong> ListPhongChuaĐuNguoi()
         {
             List<Phong> list = new List<Phong>();
-            string query = "PhongChuaDuNguoi";
+            string query = "ListPhongChuaDuNguoi";
             DataTable table = new DataTable();
             table = SQL.ThuVienSQL.Instance.Execute_Query(query);
 
@@ -83,10 +83,10 @@ namespace QuanLiPhongTro.Danhsach
 
 
         //ListKhachHangChuaLamHopDong
-        public List<KhachHang> ListKhachHangChuaLamHopDong()
+        public List<KhachHang> ListKhachHangChuaLamHopDong(string maphong)
         {
             List<KhachHang> list = new List<KhachHang>();
-            string query = "ListKhachHangChuaLamHopDong";
+            string query = string.Format("KhachHangChuaLamHopDong '{0}'", maphong);//"KhachHangChuaLamHopDong ''";
             DataTable table = new DataTable();
             table = SQL.ThuVienSQL.Instance.Execute_Query(query);
 
@@ -160,7 +160,7 @@ namespace QuanLiPhongTro.Danhsach
         }
         public DataTable SoLuongNguoiToiDaOfPhong(string ma)
         {
-            string query = string.Format("dbo.SoLuongNguoiToiDa'{0}'", ma);
+            string query = string.Format("SoLuongNguoiToiDa'{0}'", ma);
             DataTable a = SQL.ThuVienSQL.Instance.Execute_Query(query);
             return a;
         }

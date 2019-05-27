@@ -8,9 +8,10 @@ namespace QuanLiPhongTro.SQL
 {
     public class Visiable
     {
-        //DESKTOP-7L4J9P4
+        //DESKTOP-R346NSM\\SQLEXPRESS
+
         //TRUCTH\\SQLEXPRESS1
-        public static string Tenmaychu = "DESKTOP-7L4J9P4";
+        public static string Tenmaychu = "DESKTOP-R346NSM\\SQLEXPRESS";
         public static string TenCSDL = "QLPT";
         public static string TenUN = "";
         public static string Pass = "";
