@@ -114,6 +114,22 @@ namespace QuanLiPhongTro.Danhsach
             }
             return list;
         }
+        public List<KhachHang> ListTruongPhong()
+        {
+            List<KhachHang> list = new List<KhachHang>();
+            string query = "select * from KhachHang where Status = 1";
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                KhachHang tktb = new KhachHang(i);
+                list.Add(tktb);
+            }
+            return list;
+        }
+
+
 
         public List<DichVu> ListDichVu()
         {
@@ -236,6 +252,26 @@ namespace QuanLiPhongTro.Danhsach
             return list;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ThongKe"></param>
+        /// <returns></returns>
+        /// 
 
+        public List<DoanhThu> ListDoanhThu(int thang)
+        {
+            List<DoanhThu> list = new List<DoanhThu>();
+            string query = string.Format("ViewDoanhThu '{0}'",thang);
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                DoanhThu tktb = new DoanhThu(i);
+                list.Add(tktb);
+            }
+            return list;
+        }
     }
 }

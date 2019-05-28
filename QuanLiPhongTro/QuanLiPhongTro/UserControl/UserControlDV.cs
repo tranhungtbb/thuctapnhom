@@ -28,6 +28,7 @@ namespace QuanLiPhongTro
             LoadList_Data_HoaDon();
             LoadList_Data_DVKhac();
             LoadList_Data_DVDien();
+            LoatData_ComboboxIDKH_HoaDon();
         }
         void LoadList_Data_DichVu()
         {
@@ -50,7 +51,13 @@ namespace QuanLiPhongTro
             dataGridView4.DataSource = SQL.ThuVienSQL.Instance.Execute_Query(query);
         }
 
-
+        
+        void LoatData_ComboboxIDKH_HoaDon()
+        {
+            List<KhachHang> list = Danhsach.ThongKe.Instance.ListTruongPhong();
+            comb_MaKH_HĐ.DataSource = list;
+            comb_MaKH_HĐ.DisplayMember = "MaKhachHang";
+        }
 
         void LoatData_ComboboxIDDichVu()
         {
@@ -62,7 +69,7 @@ namespace QuanLiPhongTro
         {
             List<DichVu> list = Danhsach.ThongKe.Instance.ListDVDienNuoc();
             comb_MaDVDienNuoc.DataSource = list;
-            comb_MaDVDienNuoc.DisplayMember = "TenDichVu";
+            comb_MaDVDienNuoc.DisplayMember = "TenDichVu"; 
             comb_MaDVDienNuoc.ValueMember = "MaDichVu";
         }
         void LoatData_ComboboxDichVuKhac()

@@ -63,6 +63,7 @@
     <Compile Include="DTO\CTDienNuoc.cs" />
     <Compile Include="DTO\CTHoaDon.cs" />
     <Compile Include="DTO\DichVu.cs" />
+    <Compile Include="DTO\DoanhThu.cs" />
     <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\Phong.cs" />
     <Compile Include="DTO\PhongTrong.cs" />

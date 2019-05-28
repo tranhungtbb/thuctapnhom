@@ -94,6 +94,10 @@ namespace QuanLiPhongTro
             }
 
             int stt = 0;
+            if(checkBox1.Checked == true)
+            {
+                stt = 1;
+            }
             
 
             string maphong = Comb_MaPhong.Text;
@@ -170,7 +174,10 @@ namespace QuanLiPhongTro
             }
 
             int stt = 0;
-            
+            if (checkBox1.Checked == true)
+            {
+                stt = 1;
+            }
 
             string maphong = Comb_MaPhong.Text;
 
