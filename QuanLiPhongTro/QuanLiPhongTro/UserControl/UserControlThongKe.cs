@@ -8,16 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLiPhongTro.DTO;
+using System.Globalization;
 
 namespace QuanLiPhongTro
 {
     public partial class UserControlThongKe : UserControl
     {
+        int tongtien=0;
         public UserControlThongKe()
         {
             InitializeComponent();
             List_Combobox_IDPhong1();
             List_Combobox_IDPhong2();
+            label9.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tongtien);
+
         }
         public void List_Combobox_IDPhong1()
         {
@@ -46,23 +50,48 @@ namespace QuanLiPhongTro
                 lvItem.SubItems.Add(i.SDTHOAI.ToString());
                 lvItem.SubItems.Add(i.SOCM.ToString());
                 lvItem.SubItems.Add(i.MAPHONG.ToString());
-
+                
                 listView1.Items.Add(lvItem);
             }
         }
-        public void ShowListView_ChiTietHoaDon(string maphong)
+        public void ShowListView_ChiTietHoaDon(string maphong, int thang)
         {
-            listView2.Items.Clear();
+            listView_CTDVK.Items.Clear();
 
-            List<ThietBi> listPT = Danhsach.ThongKe.Instance.ListThietBiofPhong(maphong);
-            foreach (ThietBi i in listPT)
+            List<CTHoaDon> listPT = Danhsach.ThongKe.Instance.ListCTHoaDon(maphong, thang);
+            int j = 0;
+            foreach (CTHoaDon i in listPT)
             {
-                ListViewItem lvItem = new ListViewItem(i.MATHIETBI.ToString());
-                lvItem.SubItems.Add(i.TENTHIETBI.ToString());
-                lvItem.SubItems.Add(i.TINHTRANG.ToString());
-                lvItem.SubItems.Add(i.GHICHU.ToString());
+                j++;
+                ListViewItem lvItem = new ListViewItem(j.ToString());
+                lvItem.SubItems.Add(i.TEN.ToString());
+                lvItem.SubItems.Add(i.SLUONG.ToString());
+                lvItem.SubItems.Add(string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", i.DONGIA));
+                lvItem.SubItems.Add(i.DVT.ToString());
+                lvItem.SubItems.Add(string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", i.TT));
+                tongtien += i.TT;
+                listView_CTDVK.Items.Add(lvItem);
+            }
+        }
+        public void ShowListView_ChiTietDienNuoc(string maphong, int thang)
+        {
+            listView_CTĐN.Items.Clear();
 
-                listView2.Items.Add(lvItem);
+            List<CTDienNuoc> listPT = Danhsach.ThongKe.Instance.ListCTDienNuoc(maphong, thang);
+            int j = 0;
+            foreach (CTDienNuoc i in listPT)
+            {
+                j++;
+                ListViewItem lvItem = new ListViewItem(j.ToString());
+                lvItem.SubItems.Add(i.TEN.ToString());
+                lvItem.SubItems.Add(i.CHISOCU.ToString());
+                lvItem.SubItems.Add(i.CHISOMOI.ToString());
+                lvItem.SubItems.Add(i.SUDUNG.ToString());
+                lvItem.SubItems.Add(string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", i.DONGIA));
+                lvItem.SubItems.Add(i.DVT.ToString());
+                lvItem.SubItems.Add(string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", i.TT));
+                tongtien += i.TT;
+                listView_CTĐN.Items.Add(lvItem);
             }
         }
 
@@ -72,6 +101,16 @@ namespace QuanLiPhongTro
             ShowListView_KhachHang(ma);
             DataTable a = Danhsach.ThongKe.Instance.SoLuongNguoiToiDaOfPhong(ma);
             sl.Text = a.Rows[0][0].ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string ma =comboBox1.Text;
+            string t = comboBox2.Text;
+            int thang = (int)Convert.ToDouble(t);
+            ShowListView_ChiTietHoaDon(ma,thang);
+            ShowListView_ChiTietDienNuoc(ma,thang);
+            label9.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tongtien);
         }
     }
 }

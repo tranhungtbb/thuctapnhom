@@ -144,6 +144,13 @@ namespace QuanLiPhongTro.Danhsach
             }
             return list;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ThongKe"></param>
+        /// <returns></returns>
+        /// 
+
         public List<KhachHang> ListKhachHangofPhong(string maphong)
         {
             List<KhachHang> list = new List<KhachHang>();
@@ -158,11 +165,77 @@ namespace QuanLiPhongTro.Danhsach
             }
             return list;
         }
+
         public DataTable SoLuongNguoiToiDaOfPhong(string ma)
         {
             string query = string.Format("SoLuongNguoiToiDa'{0}'", ma);
             DataTable a = SQL.ThuVienSQL.Instance.Execute_Query(query);
             return a;
         }
+        public List<CTHoaDon> ListCTHoaDon(string maphong, int thang)
+        {
+            List<CTHoaDon> list = new List<CTHoaDon>();
+            string query = string.Format("ChiTietHoaDonOfPhong '{0}','{1}'", maphong,thang);
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                CTHoaDon tktb = new CTHoaDon(i);
+                list.Add(tktb);
+            }
+            return list;
+        }
+        public List<CTDienNuoc> ListCTDienNuoc(string maphong, int thang)
+        {
+            List<CTDienNuoc> list = new List<CTDienNuoc>();
+            string query = string.Format("ChiDienNuocOfPhong '{0}','{1}'", maphong, thang);
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                CTDienNuoc tktb = new CTDienNuoc(i);
+                list.Add(tktb);
+            }
+            return list;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="DichVu"></param>
+        /// <returns></returns>
+        ///
+
+        public List<DichVu> ListDVDienNuoc()
+        {
+            List<DichVu> list = new List<DichVu>();
+            string query = string.Format("ListDienNuoc");
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                DichVu tktb = new DichVu(i);
+                list.Add(tktb);
+            }
+            return list;
+        }
+        public List<DichVu> ListDVKhac()
+        {
+            List<DichVu> list = new List<DichVu>();
+            string query = string.Format("ListDVKhac");
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                DichVu tktb = new DichVu(i);
+                list.Add(tktb);
+            }
+            return list;
+        }
+
+
     }
 }

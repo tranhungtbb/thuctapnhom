@@ -69,14 +69,22 @@ namespace QuanLiPhongTro.DAO
 
         /////////////////////////////////////////////////////
 
-        public bool insertChiTietHoaDon(int mahd, int madv) //insert into ThietBi values('1', N'Quạt trần','',''),
+        public bool insertChiTietHoaDon(int mahd, int madv, int sl)
         {
             int i = 0;
-            string query = string.Format("insert into ChiTietHoaDon values('{0}','{1}')", mahd, madv);
+            string query = string.Format("insert into ChiTietHoaDon values('{0}','{1}','{2}')", madv, mahd, sl);
             i = SQL.ThuVienSQL.Instance.Execute_NonQuery(query);
             return i > 0;
         }
-        
+
+        public bool updateChiTietHoaDon(int mahd, int madv, int sl)
+        {
+            int i = 0;
+            string query = string.Format("update ChiTietHoaDon set SoLuong  = '{0}' where MaDichVu = '{1}' and MaHoaDon = {2}", sl, madv, mahd);
+            i = SQL.ThuVienSQL.Instance.Execute_NonQuery(query);
+            return i > 0;
+        }
+
         public bool deleteChiTietHoaDon(int mahd, int madv)
         {
             int i = 0;
