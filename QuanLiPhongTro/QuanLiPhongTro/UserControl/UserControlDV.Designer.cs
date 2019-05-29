@@ -103,7 +103,7 @@
             this.btn_XoaDV.FlatAppearance.BorderSize = 0;
             this.btn_XoaDV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_XoaDV.Location = new System.Drawing.Point(1270, 128);
-            this.btn_XoaDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_XoaDV.Margin = new System.Windows.Forms.Padding(4);
             this.btn_XoaDV.Name = "btn_XoaDV";
             this.btn_XoaDV.Size = new System.Drawing.Size(45, 29);
             this.btn_XoaDV.TabIndex = 267;
@@ -118,7 +118,7 @@
             this.btn_CapnhapDV.FlatAppearance.BorderSize = 0;
             this.btn_CapnhapDV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CapnhapDV.Location = new System.Drawing.Point(1270, 94);
-            this.btn_CapnhapDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_CapnhapDV.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CapnhapDV.Name = "btn_CapnhapDV";
             this.btn_CapnhapDV.Size = new System.Drawing.Size(45, 29);
             this.btn_CapnhapDV.TabIndex = 266;
@@ -133,7 +133,7 @@
             this.btn_ThemDV.FlatAppearance.BorderSize = 0;
             this.btn_ThemDV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ThemDV.Location = new System.Drawing.Point(1270, 61);
-            this.btn_ThemDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ThemDV.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThemDV.Name = "btn_ThemDV";
             this.btn_ThemDV.Size = new System.Drawing.Size(45, 29);
             this.btn_ThemDV.TabIndex = 265;
@@ -148,7 +148,7 @@
             this.btn_XoaDV_ĐN.FlatAppearance.BorderSize = 0;
             this.btn_XoaDV_ĐN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_XoaDV_ĐN.Location = new System.Drawing.Point(483, 517);
-            this.btn_XoaDV_ĐN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_XoaDV_ĐN.Margin = new System.Windows.Forms.Padding(4);
             this.btn_XoaDV_ĐN.Name = "btn_XoaDV_ĐN";
             this.btn_XoaDV_ĐN.Size = new System.Drawing.Size(46, 33);
             this.btn_XoaDV_ĐN.TabIndex = 264;
@@ -163,7 +163,7 @@
             this.btn_CapnhapDV_ĐN.FlatAppearance.BorderSize = 0;
             this.btn_CapnhapDV_ĐN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CapnhapDV_ĐN.Location = new System.Drawing.Point(446, 518);
-            this.btn_CapnhapDV_ĐN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_CapnhapDV_ĐN.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CapnhapDV_ĐN.Name = "btn_CapnhapDV_ĐN";
             this.btn_CapnhapDV_ĐN.Size = new System.Drawing.Size(40, 33);
             this.btn_CapnhapDV_ĐN.TabIndex = 263;
@@ -178,7 +178,7 @@
             this.btn_ThemDV_ĐN.FlatAppearance.BorderSize = 0;
             this.btn_ThemDV_ĐN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ThemDV_ĐN.Location = new System.Drawing.Point(392, 517);
-            this.btn_ThemDV_ĐN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ThemDV_ĐN.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThemDV_ĐN.Name = "btn_ThemDV_ĐN";
             this.btn_ThemDV_ĐN.Size = new System.Drawing.Size(46, 33);
             this.btn_ThemDV_ĐN.TabIndex = 262;
@@ -193,7 +193,7 @@
             this.btn_XoaDV_HĐ.FlatAppearance.BorderSize = 0;
             this.btn_XoaDV_HĐ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_XoaDV_HĐ.Location = new System.Drawing.Point(803, 565);
-            this.btn_XoaDV_HĐ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_XoaDV_HĐ.Margin = new System.Windows.Forms.Padding(4);
             this.btn_XoaDV_HĐ.Name = "btn_XoaDV_HĐ";
             this.btn_XoaDV_HĐ.Size = new System.Drawing.Size(40, 36);
             this.btn_XoaDV_HĐ.TabIndex = 261;
@@ -208,7 +208,7 @@
             this.btn_ThemDV_HĐ.FlatAppearance.BorderSize = 0;
             this.btn_ThemDV_HĐ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ThemDV_HĐ.Location = new System.Drawing.Point(707, 566);
-            this.btn_ThemDV_HĐ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ThemDV_HĐ.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThemDV_HĐ.Name = "btn_ThemDV_HĐ";
             this.btn_ThemDV_HĐ.Size = new System.Drawing.Size(40, 36);
             this.btn_ThemDV_HĐ.TabIndex = 259;
@@ -223,7 +223,7 @@
             this.btn_XoaHĐ.FlatAppearance.BorderSize = 0;
             this.btn_XoaHĐ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_XoaHĐ.Location = new System.Drawing.Point(262, 158);
-            this.btn_XoaHĐ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_XoaHĐ.Margin = new System.Windows.Forms.Padding(4);
             this.btn_XoaHĐ.Name = "btn_XoaHĐ";
             this.btn_XoaHĐ.Size = new System.Drawing.Size(38, 34);
             this.btn_XoaHĐ.TabIndex = 258;
@@ -238,7 +238,7 @@
             this.btn_CapnhapHĐ.FlatAppearance.BorderSize = 0;
             this.btn_CapnhapHĐ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CapnhapHĐ.Location = new System.Drawing.Point(227, 158);
-            this.btn_CapnhapHĐ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_CapnhapHĐ.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CapnhapHĐ.Name = "btn_CapnhapHĐ";
             this.btn_CapnhapHĐ.Size = new System.Drawing.Size(38, 34);
             this.btn_CapnhapHĐ.TabIndex = 257;
@@ -253,7 +253,7 @@
             this.btn_ThemHĐ.FlatAppearance.BorderSize = 0;
             this.btn_ThemHĐ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ThemHĐ.Location = new System.Drawing.Point(181, 158);
-            this.btn_ThemHĐ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ThemHĐ.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThemHĐ.Name = "btn_ThemHĐ";
             this.btn_ThemHĐ.Size = new System.Drawing.Size(38, 34);
             this.btn_ThemHĐ.TabIndex = 256;
@@ -263,7 +263,7 @@
             // txt_Chisomoi
             // 
             this.txt_Chisomoi.Location = new System.Drawing.Point(385, 281);
-            this.txt_Chisomoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Chisomoi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Chisomoi.Name = "txt_Chisomoi";
             this.txt_Chisomoi.Size = new System.Drawing.Size(132, 22);
             this.txt_Chisomoi.TabIndex = 255;
@@ -271,7 +271,7 @@
             // txt_Chisocu
             // 
             this.txt_Chisocu.Location = new System.Drawing.Point(385, 249);
-            this.txt_Chisocu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Chisocu.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Chisocu.Name = "txt_Chisocu";
             this.txt_Chisocu.Size = new System.Drawing.Size(132, 22);
             this.txt_Chisocu.TabIndex = 254;
@@ -280,7 +280,7 @@
             // 
             this.comb_MaDVDienNuoc.FormattingEnabled = true;
             this.comb_MaDVDienNuoc.Location = new System.Drawing.Point(125, 287);
-            this.comb_MaDVDienNuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comb_MaDVDienNuoc.Margin = new System.Windows.Forms.Padding(4);
             this.comb_MaDVDienNuoc.Name = "comb_MaDVDienNuoc";
             this.comb_MaDVDienNuoc.Size = new System.Drawing.Size(140, 24);
             this.comb_MaDVDienNuoc.TabIndex = 253;
@@ -289,7 +289,7 @@
             // 
             this.comb_MaHDĐN.FormattingEnabled = true;
             this.comb_MaHDĐN.Location = new System.Drawing.Point(125, 252);
-            this.comb_MaHDĐN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comb_MaHDĐN.Margin = new System.Windows.Forms.Padding(4);
             this.comb_MaHDĐN.Name = "comb_MaHDĐN";
             this.comb_MaHDĐN.Size = new System.Drawing.Size(140, 24);
             this.comb_MaHDĐN.TabIndex = 252;
@@ -297,7 +297,7 @@
             // txt_Donvitinh
             // 
             this.txt_Donvitinh.Location = new System.Drawing.Point(1039, 126);
-            this.txt_Donvitinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Donvitinh.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Donvitinh.Name = "txt_Donvitinh";
             this.txt_Donvitinh.Size = new System.Drawing.Size(163, 22);
             this.txt_Donvitinh.TabIndex = 251;
@@ -305,7 +305,7 @@
             // txt_DongiaDV
             // 
             this.txt_DongiaDV.Location = new System.Drawing.Point(1039, 92);
-            this.txt_DongiaDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_DongiaDV.Margin = new System.Windows.Forms.Padding(4);
             this.txt_DongiaDV.Name = "txt_DongiaDV";
             this.txt_DongiaDV.Size = new System.Drawing.Size(163, 22);
             this.txt_DongiaDV.TabIndex = 250;
@@ -313,7 +313,7 @@
             // txt_Tendichvu
             // 
             this.txt_Tendichvu.Location = new System.Drawing.Point(1039, 60);
-            this.txt_Tendichvu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Tendichvu.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Tendichvu.Name = "txt_Tendichvu";
             this.txt_Tendichvu.Size = new System.Drawing.Size(163, 22);
             this.txt_Tendichvu.TabIndex = 249;
@@ -322,7 +322,7 @@
             // 
             this.comb_MaKH_HĐ.FormattingEnabled = true;
             this.comb_MaKH_HĐ.Location = new System.Drawing.Point(156, 124);
-            this.comb_MaKH_HĐ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comb_MaKH_HĐ.Margin = new System.Windows.Forms.Padding(4);
             this.comb_MaKH_HĐ.Name = "comb_MaKH_HĐ";
             this.comb_MaKH_HĐ.Size = new System.Drawing.Size(137, 24);
             this.comb_MaKH_HĐ.TabIndex = 247;
@@ -334,7 +334,7 @@
             "0",
             "1"});
             this.comb_Trangthai.Location = new System.Drawing.Point(159, 91);
-            this.comb_Trangthai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comb_Trangthai.Margin = new System.Windows.Forms.Padding(4);
             this.comb_Trangthai.Name = "comb_Trangthai";
             this.comb_Trangthai.Size = new System.Drawing.Size(135, 24);
             this.comb_Trangthai.TabIndex = 246;
@@ -342,7 +342,7 @@
             // txt_Mahoadon
             // 
             this.txt_Mahoadon.Location = new System.Drawing.Point(159, 31);
-            this.txt_Mahoadon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Mahoadon.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Mahoadon.Name = "txt_Mahoadon";
             this.txt_Mahoadon.Size = new System.Drawing.Size(135, 22);
             this.txt_Mahoadon.TabIndex = 245;
@@ -351,7 +351,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(559, 229);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(275, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -373,7 +373,7 @@
             // 
             this.comb_MaHD_CT.FormattingEnabled = true;
             this.comb_MaHD_CT.Location = new System.Drawing.Point(699, 398);
-            this.comb_MaHD_CT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comb_MaHD_CT.Margin = new System.Windows.Forms.Padding(4);
             this.comb_MaHD_CT.Name = "comb_MaHD_CT";
             this.comb_MaHD_CT.Size = new System.Drawing.Size(133, 24);
             this.comb_MaHD_CT.TabIndex = 243;
@@ -382,7 +382,7 @@
             // 
             this.comb_MaDV_Khac.FormattingEnabled = true;
             this.comb_MaDV_Khac.Location = new System.Drawing.Point(699, 430);
-            this.comb_MaDV_Khac.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comb_MaDV_Khac.Margin = new System.Windows.Forms.Padding(4);
             this.comb_MaDV_Khac.Name = "comb_MaDV_Khac";
             this.comb_MaDV_Khac.Size = new System.Drawing.Size(133, 24);
             this.comb_MaDV_Khac.TabIndex = 242;
@@ -413,7 +413,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.panel5.Location = new System.Drawing.Point(551, 347);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(764, 12);
             this.panel5.TabIndex = 239;
@@ -422,7 +422,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.panel4.Location = new System.Drawing.Point(537, 225);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(13, 399);
             this.panel4.TabIndex = 238;
@@ -432,7 +432,7 @@
             this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Location = new System.Drawing.Point(863, 370);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(436, 244);
             this.dataGridView4.TabIndex = 237;
@@ -442,7 +442,7 @@
             this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Location = new System.Drawing.Point(8, 318);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(521, 192);
             this.dataGridView3.TabIndex = 236;
@@ -495,7 +495,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.panel2.Location = new System.Drawing.Point(0, 213);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(851, 12);
             this.panel2.TabIndex = 231;
@@ -517,12 +517,12 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(84, 229);
+            this.label10.Location = new System.Drawing.Point(61, 229);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(167, 23);
+            this.label10.Size = new System.Drawing.Size(346, 23);
             this.label10.TabIndex = 229;
-            this.label10.Text = "Dịch vụ điện nước";
+            this.label10.Text = "Thêm dịch vụ điện nước cho hóa đơn";
             // 
             // dataGridView_DichVu
             // 
@@ -531,7 +531,7 @@
             this.dataGridView_DichVu.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_DichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_DichVu.Location = new System.Drawing.Point(863, 165);
-            this.dataGridView_DichVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView_DichVu.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView_DichVu.Name = "dataGridView_DichVu";
             this.dataGridView_DichVu.Size = new System.Drawing.Size(452, 181);
             this.dataGridView_DichVu.TabIndex = 228;
@@ -596,7 +596,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(0)))), ((int)(((byte)(127)))));
             this.panel1.Location = new System.Drawing.Point(841, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(13, 346);
             this.panel1.TabIndex = 222;
@@ -605,7 +605,7 @@
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(159, 59);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(135, 22);
             this.dateTimePicker1.TabIndex = 221;
@@ -615,7 +615,7 @@
             this.dataGridView_HoaDon.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_HoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_HoaDon.Location = new System.Drawing.Point(303, 11);
-            this.dataGridView_HoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView_HoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView_HoaDon.Name = "dataGridView_HoaDon";
             this.dataGridView_HoaDon.Size = new System.Drawing.Size(531, 194);
             this.dataGridView_HoaDon.TabIndex = 220;
@@ -682,7 +682,7 @@
             this.panel3.Controls.Add(this.label19);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 621);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1319, 26);
             this.panel3.TabIndex = 214;
@@ -702,7 +702,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(1039, 27);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(163, 24);
             this.comboBox1.TabIndex = 268;
@@ -810,7 +810,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControlDV";
             this.Size = new System.Drawing.Size(1319, 647);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

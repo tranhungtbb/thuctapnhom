@@ -66,6 +66,7 @@
     <Compile Include="DTO\DoanhThu.cs" />
     <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\Phong.cs" />
+    <Compile Include="DTO\PhongCoNguoi.cs" />
     <Compile Include="DTO\PhongTrong.cs" />
     <Compile Include="DTO\ThietBi.cs" />
     <Compile Include="Forms\DangNhap.cs">

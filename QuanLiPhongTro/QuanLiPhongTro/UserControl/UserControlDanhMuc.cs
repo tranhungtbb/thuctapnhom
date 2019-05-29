@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLiPhongTro.DTO;
+using System.Globalization;
 
 namespace QuanLiPhongTro
 {
@@ -18,7 +19,9 @@ namespace QuanLiPhongTro
             InitializeComponent();
             List_Combobox();
             LoatData();
-            
+            ShowListPhongCoNguoi();
+
+
         }
         #region LoatListData
         void LoadList_Data_ThietBi()
@@ -303,6 +306,25 @@ namespace QuanLiPhongTro
                 lvItem.SubItems.Add(i.GHICHU.ToString());
 
                 listView_ThietBi.Items.Add(lvItem);
+            }
+        }
+        public void ShowListPhongCoNguoi()
+        {
+            listView_DSPhong.Items.Clear();
+
+            List<QuanLiPhongTro.DTO.PhongCoNguoi> listPT = Danhsach.ThongKe.Instance.PhongCoNguoi();
+            int j = 0;
+            foreach (QuanLiPhongTro.DTO.PhongCoNguoi i in listPT)
+            {
+                j++;
+                ListViewItem lvItem = new ListViewItem(j.ToString());
+                lvItem.SubItems.Add(i.MAPHONG.ToString());
+                lvItem.SubItems.Add(i.TENPHONG.ToString());
+                lvItem.SubItems.Add(string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", i.DONGIA));
+                lvItem.SubItems.Add(i.MAKH.ToString());
+                lvItem.SubItems.Add(i.HOTEN.ToString());
+
+                listView_DSPhong.Items.Add(lvItem);
             }
         }
         private void button4_Click(object sender, EventArgs e)

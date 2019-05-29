@@ -31,9 +31,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.listView_DT = new System.Windows.Forms.ListView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,6 +39,9 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
             this.panel3.Controls.Add(this.label22);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 624);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1329, 26);
             this.panel3.TabIndex = 29;
@@ -88,6 +88,45 @@
             this.listView_DT.TabIndex = 30;
             this.listView_DT.UseCompatibleStateImageBehavior = false;
             this.listView_DT.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "STT";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Mã phòng";
+            this.columnHeader2.Width = 77;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tên phòng";
+            this.columnHeader3.Width = 79;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Tên Người Nộp";
+            this.columnHeader4.Width = 105;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Đơn giá của phòng";
+            this.columnHeader5.Width = 129;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Dịch vụ điện nước";
+            this.columnHeader6.Width = 119;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Dịch vụ khác";
+            this.columnHeader7.Width = 93;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Tổng tiền";
+            this.columnHeader8.Width = 417;
             // 
             // label1
             // 
@@ -135,45 +174,6 @@
             this.label2.TabIndex = 33;
             this.label2.Text = "Tháng";
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "STT";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Mã phòng";
-            this.columnHeader2.Width = 77;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Tên phòng";
-            this.columnHeader3.Width = 79;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Tên Người Nộp";
-            this.columnHeader4.Width = 105;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Đơn giá của phòng";
-            this.columnHeader5.Width = 129;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Dịch vụ điện nước";
-            this.columnHeader6.Width = 119;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Dịch vụ khác";
-            this.columnHeader7.Width = 93;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Tổng tiền";
-            this.columnHeader8.Width = 417;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -220,7 +220,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView_DT);
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControlDoanhThu";
             this.Size = new System.Drawing.Size(1329, 650);
             this.panel3.ResumeLayout(false);

@@ -112,5 +112,10 @@ namespace QuanLiPhongTro
             ShowListView_ChiTietDienNuoc(ma,thang);
             label9.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tongtien);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

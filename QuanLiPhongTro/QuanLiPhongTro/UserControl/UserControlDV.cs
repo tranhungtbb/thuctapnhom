@@ -56,7 +56,7 @@ namespace QuanLiPhongTro
         {
             List<KhachHang> list = Danhsach.ThongKe.Instance.ListTruongPhong();
             comb_MaKH_HĐ.DataSource = list;
-            comb_MaKH_HĐ.DisplayMember = "MaKhachHang";
+            comb_MaKH_HĐ.DisplayMember = "TenKhachHang";
         }
 
         void LoatData_ComboboxIDDichVu()

@@ -98,6 +98,20 @@ namespace QuanLiPhongTro.Danhsach
             return list;
         }
 
+        public List<PhongCoNguoi> PhongCoNguoi()
+        {
+            List<PhongCoNguoi> list = new List<PhongCoNguoi>();
+            string query = string.Format("ListPhong");//"KhachHangChuaLamHopDong ''";
+            DataTable table = new DataTable();
+            table = SQL.ThuVienSQL.Instance.Execute_Query(query);
+
+            foreach (DataRow i in table.Rows)
+            {
+                PhongCoNguoi tkhd = new PhongCoNguoi(i);
+                list.Add(tkhd);
+            }
+            return list;
+        }
 
 
         public List<ThietBi> ListThietbi()
